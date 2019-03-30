@@ -2,6 +2,12 @@
 # 文章索引
 
 
+## 基礎概念
+
+* [verbose](verbose.md)
+* [set-option](set-option.md)
+
+
 ## 基礎設定
 
 * [Cursor Line](cursor-line.md)
