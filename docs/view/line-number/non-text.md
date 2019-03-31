@@ -18,6 +18,19 @@ vim -u 'NONE' -c ':verbose hi NonText'
 NonText        xxx term=bold ctermfg=12 gui=bold guifg=Blue
 ```
 
+執行
+
+``` sh
+vim -u NONE -c ':verbose hi EndOfBuffer'
+```
+
+顯示
+
+```
+EndOfBuffer    xxx links to NonText
+```
+
+
 ### 觀看預設設定的外觀
 
 ``` sh
@@ -79,4 +92,7 @@ vim -u 'NONE' -c 'hi NonText ctermfg=244 ctermbg=234 cterm=NONE'
 
 ## vim help
 
-* $ vim -c ":help NonText" # [說明連結](https://vimhelp.org/syntax.txt.html#hl-NonText)
+* $ vim -c ':help NonText' # [說明連結](https://vimhelp.org/syntax.txt.html#hl-NonText)
+* $ vim -c ':help EndOfBuffer' # [說明連結](https://vimhelp.org/syntax.txt.html#hl-EndOfBuffer)
+* $ vim -c ":help 'highlight'" # [說明連結](https://vimhelp.org/options.txt.html#'highlight')
+* $ vim -c ":help 'hl'"  # [說明連結](https://vimhelp.org/options.txt.html#'hl')
