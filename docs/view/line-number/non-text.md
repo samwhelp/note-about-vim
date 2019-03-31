@@ -30,6 +30,18 @@ vim -u NONE -c ':verbose hi EndOfBuffer'
 EndOfBuffer    xxx links to NonText
 ```
 
+執行
+
+``` sh
+vim -u 'NONE' -c "set highlight?"
+```
+
+顯示
+
+<pre v-pre="" data-lang=""><code class="">
+highlight=8:SpecialKey,~:EndOfBuffer,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,N:CursorLineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill,!:CursorColumn,.:CursorLine,o:ColorColumn,q:QuickFixLine,z:StatusLineTerm,Z:StatusLineTermNC
+</code>
+</pre>
 
 ### 觀看預設設定的外觀
 
