@@ -11,3 +11,8 @@ parent: Plugin
 ## Link
 
 * [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+
+
+## 範例
+
+* [vim-plug/start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/plugin/vim-plug/start)
