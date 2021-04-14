@@ -1,6 +1,6 @@
 ---
 title: LineNr
-nav_order: 5020
+nav_order: 5031
 has_children: false
 parent: 行數
 grand_parent: 外觀微調

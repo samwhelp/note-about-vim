@@ -1,6 +1,6 @@
 ---
 title: Cursor Line - 如何設定
-nav_order: 5090
+nav_order: 5033
 has_children: false
 parent: 游標行
 grand_parent: 外觀微調

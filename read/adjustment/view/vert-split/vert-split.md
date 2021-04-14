@@ -1,6 +1,6 @@
 ---
 title: VertSplit
-nav_order: 5090
+nav_order: 5022
 has_children: false
 parent: 視窗分隔欄
 grand_parent: 外觀微調
