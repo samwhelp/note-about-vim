@@ -15,4 +15,4 @@ parent: Plugin
 
 ## 範例
 
-* [vim-plug/start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/plugin/vim-plug/start)
+* [vim-plug/start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/start)
