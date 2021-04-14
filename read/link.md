@@ -25,6 +25,7 @@ has_children: true
 ## Case
 
 * [https://github.com/lamartire/dotfiles/blob/master/.config/nvim/init.vim](https://github.com/lamartire/dotfiles/blob/master/.config/nvim/init.vim)
+* [https://github.com/samwhelp/lamartire-dotfiles/blob/master/.config/nvim/init.vim](https://github.com/samwhelp/lamartire-dotfiles/blob/master/.config/nvim/init.vim)
 
 
 ## Just the Docs
