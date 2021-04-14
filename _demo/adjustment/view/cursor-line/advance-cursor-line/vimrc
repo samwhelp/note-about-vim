@@ -1,0 +1,9 @@
+
+
+hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
+
+set cursorline
+set nocursorcolumn
+
+au InsertLeave,WinEnter * set cursorline nocursorcolumn
+au InsertEnter,WinLeave * set nocursorline nocursorcolumn
