@@ -1,0 +1,15 @@
+
+
+" ## Switch Window
+nnoremap <Tab> <C-w>w
+nnoremap <BS> <C-w>W
+
+
+" ## Switch Buffer
+nnoremap <C-j> :bprevious<CR>
+nnoremap <C-k> :bnext<CR>
+
+
+" ## Switch TabPage
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
