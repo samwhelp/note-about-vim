@@ -1,0 +1,4 @@
+
+
+nnoremap <S-Tab> :w<CR>
+inoremap <S-Tab> <Esc>:w<CR>a

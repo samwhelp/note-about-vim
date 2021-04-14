@@ -1,0 +1,6 @@
+
+
+nnoremap <S-Down> <C-w>-
+nnoremap <S-Up> <C-w>+
+nnoremap <S-Left> <C-w><
+nnoremap <S-Right> <C-w>>
