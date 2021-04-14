@@ -59,3 +59,8 @@ nnoremap <C-l> :tabnext<CR>
 | `<Ctrl+j>` | [:bnext](https://vimhelp.org/windows.txt.html#:bnext) | 切換到下一個 Buffer |
 | `<Ctrl+h>` | [:tabprevious](https://vimhelp.org/tabpage.txt.html#:tabprevious) | 切換到上一個 TabPage |
 | `<Ctrl+l>` | [:tabnext](https://vimhelp.org/tabpage.txt.html#:tabnext) | 切換到下一個 TabPage |
+
+
+## 範例
+
+* [quick-switch](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/quick-switch)

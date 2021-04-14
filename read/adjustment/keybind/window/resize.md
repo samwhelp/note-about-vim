@@ -41,3 +41,8 @@ nnoremap <S-Right> <C-w>>
 | `<S-Right>` | [&lt;C-w&gt;>](https://vimhelp.org/windows.txt.html#CTRL-W_>) |
 
 > 關於「S」，指的是「Shift」
+
+
+## 範例
+
+* [window-resize](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/window-resize)

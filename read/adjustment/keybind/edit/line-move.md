@@ -39,3 +39,9 @@ inoremap <S-PageDown> <Esc>:m+<CR>i
 | `<S-PageDown>` | [:m+](https://vimhelp.org/change.txt.html#:m)&lt;CR&gt; | Move line Down. | Work on Normal Mode and Insert Mode |
 
 > 關於「S」，指的是「Shift」
+
+
+
+## 範例
+
+* [line-move](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/line-move)
