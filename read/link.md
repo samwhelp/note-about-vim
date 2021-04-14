@@ -22,6 +22,11 @@ has_children: true
 * [Kakoune](https://kakoune.org) ([GitHub](https://github.com/mawww/kakoune))
 
 
+## Case
+
+* [https://github.com/lamartire/dotfiles/blob/master/.config/nvim/init.vim](https://github.com/lamartire/dotfiles/blob/master/.config/nvim/init.vim)
+
+
 ## Just the Docs
 
 * [Just the Docs](https://pmarsceill.github.io/just-the-docs/) ([GitHub](https://github.com/pmarsceill/just-the-docs))
