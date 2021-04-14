@@ -1,12 +1,12 @@
 ---
-title: Cursor Column - 進階應用
+title: Cursor Line And Column - 進階應用
 nav_order: 5036
 has_children: false
 parent: 游標行
 grand_parent: 外觀微調
 ---
 
-# Cursor Column - 進階應用
+# Cursor Line And Column - 進階應用
 
 
 # 如何設定
