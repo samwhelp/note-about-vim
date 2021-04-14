@@ -1,12 +1,25 @@
 ---
 title: 游標行
-nav_order: 5003
-has_children: false
+nav_order: 5010
+has_children: true
 parent: 外觀微調
 ---
 
-# vim 使用筆記 - 外觀設定 - 游標行
+# 游標行
 
 
-* [文章索引](all.md)
-* [回總索引](https://samwhelp.github.io/note-about-vim/)
+## 基礎概念
+
+* [verbose](verbose.md)
+* [set-option](set-option.md)
+
+## 基礎設定
+
+* [Cursor Line](cursor-line.md)
+* [Cursor Column](cursor-column.md)
+
+
+## 進階應用
+
+* [Cursor Line](advance-cursor-line.md)
+* [Cursor Line And Column](advance-cursor-line-column.md)
