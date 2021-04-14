@@ -28,6 +28,13 @@ has_children: true
 * [https://github.com/samwhelp/lamartire-dotfiles/blob/master/.config/nvim/init.vim](https://github.com/samwhelp/lamartire-dotfiles/blob/master/.config/nvim/init.vim)
 
 
+## Article
+
+* 阮一峰的網絡日誌 / [Vim 配置入門](http://www.ruanyifeng.com/blog/2018/09/vimrc.html)
+* MagicLen / [個人化自己的vim文字編輯器(.vimrc設定教學)](https://magiclen.org/vimrc/)
+* [Vim 插件管理器概覽](https://www.jianshu.com/p/780243c792cc)
+
+
 ## Just the Docs
 
 * [Just the Docs](https://pmarsceill.github.io/just-the-docs/) ([GitHub](https://github.com/pmarsceill/just-the-docs))
