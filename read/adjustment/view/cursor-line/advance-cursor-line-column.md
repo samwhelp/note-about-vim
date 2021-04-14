@@ -71,3 +71,8 @@ EOF
 ``` sh
 $ vim -u ./vimrc
 ```
+
+
+## 範例
+
+* [advance-cursor-line-column](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/view/cursor-line/advance-cursor-line-column)
