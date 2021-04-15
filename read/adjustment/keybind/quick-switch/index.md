@@ -30,6 +30,15 @@ nnoremap <C-j> :bprevious<CR>
 nnoremap <C-k> :bnext<CR>
 ```
 
+這裡要注意設定
+
+```
+set hidden
+```
+
+這樣才會平順的切換「Buffer」，否則沒有存檔的「Buffer」在切換時，會出現提示「是否要存檔」。
+
+* :help [hidden](https://vimhelp.org/options.txt.html#%27hidden%27)
 
 
 ## Switch TabPage
