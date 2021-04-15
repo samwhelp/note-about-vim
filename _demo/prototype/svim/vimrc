@@ -404,6 +404,8 @@ colorscheme slate					" *
 
 " Use Plugin Theme
 
+"colorscheme seoul256
+"colorscheme seoul256-light
 "colorscheme space_vim_theme
 "colorscheme monokai
 "colorscheme onedark
