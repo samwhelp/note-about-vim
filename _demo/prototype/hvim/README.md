@@ -21,9 +21,18 @@ neovim                                                                          
     Fork of Vim aiming to improve user experience, plugins, and GUIs
 ```
 
+run
 
 ``` sh
 pamac install neovim python-pynvim
 ```
 
 > coc need python-pynvim
+
+
+``` sh
+pamac install yarn
+```
+
+> coc need yarn
+
