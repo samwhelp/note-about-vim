@@ -28,6 +28,14 @@ has_children: true
 * [https://github.com/samwhelp/lamartire-dotfiles/blob/master/.config/nvim/init.vim](https://github.com/samwhelp/lamartire-dotfiles/blob/master/.config/nvim/init.vim)
 
 
+## Prototype
+
+* [ivim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/ivim)
+* [svim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/svim)
+* [mvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/mvim)
+* [hvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/hvim)
+
+
 ## Article
 
 * 阮一峰的網絡日誌 / [Vim 配置入門](http://www.ruanyifeng.com/blog/2018/09/vimrc.html)
