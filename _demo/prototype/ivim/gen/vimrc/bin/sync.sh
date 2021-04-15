@@ -18,7 +18,7 @@ source "$THE_BASE_DIR_PATH/init.sh"
 ### Head: Model
 ##
 
-svim_vimrc_sync () {
+ivim_vimrc_sync () {
 
 
 	echo "install -Dm644 $THE_VIMRC_TARGET_FILE_PATH $THE_DIST_VIMRC_TARGET_FILE_PATH"
@@ -29,7 +29,7 @@ svim_vimrc_sync () {
 
 }
 
-svim_nvimrc_sync () {
+ivim_nvimrc_sync () {
 
 	cd $THE_DIST_VIMRC_TARGET_DIR_PATH
 
@@ -50,9 +50,9 @@ __main__ () {
 	echo 'Sync...'
 	echo
 
-	svim_vimrc_sync
+	ivim_vimrc_sync
 
-	svim_nvimrc_sync
+	ivim_nvimrc_sync
 
 	echo
 	echo 'Done.'
