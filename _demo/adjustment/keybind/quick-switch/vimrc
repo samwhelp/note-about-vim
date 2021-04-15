@@ -1,4 +1,7 @@
 
+" ## set hidden for [Switch Buffer] smooth
+set hidden
+
 
 " ## Switch Window
 nnoremap <Tab> <C-w>w
