@@ -36,6 +36,13 @@ has_children: true
 * [hvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/hvim)
 
 
+## Tool
+
+* [vimrc-ctrl](https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)
+* [nvimrc-ctrl](https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)
+
+
+
 ## Article
 
 * 阮一峰的網絡日誌 / [Vim 配置入門](http://www.ruanyifeng.com/blog/2018/09/vimrc.html)
