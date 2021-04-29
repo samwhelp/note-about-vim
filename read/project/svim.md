@@ -19,4 +19,5 @@ parent: 專案
 * [tool-svim-core-enhance](https://github.com/samwhelp/tool-svim-core-enhance)
 * [tool-svim-colorfit](https://github.com/samwhelp/tool-svim-colorfit)
 * [tool-svim-gen](https://github.com/samwhelp/tool-svim-gen)
+* [tool-svim-doc](https://github.com/samwhelp/tool-svim-doc)
 * [tool-svim-ctrl](https://github.com/samwhelp/tool-svim-ctrl)
