@@ -42,6 +42,11 @@ has_children: true
 * [nvimrc-ctrl](https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)
 
 
+## Font
+
+* [Literation Mono Nerd Font](https://samwhelp.github.io/note-about-manjaro/read/adjustment/env/font.html#nerd-fonts--liberation-literation-mono-nerd-font)
+
+
 
 ## Article
 
