@@ -10,7 +10,7 @@ parent: 專案
 
 ## Prototype
 
-* [lvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/lvim)
+* [hvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/hvim)
 
 ## Project
 
