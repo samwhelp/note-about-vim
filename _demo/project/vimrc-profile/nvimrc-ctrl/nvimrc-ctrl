@@ -1,0 +1,744 @@
+#!/usr/bin/env bash
+
+
+################################################################################
+### Head: Url
+##
+
+# * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
+# * https://www.freedesktop.org/wiki/Specifications/XSettingsRegistry/
+
+##
+### Tail: Url
+################################################################################
+
+
+################################################################################
+### Head: Init
+##
+set -e ## for Exit immediately if a command exits with a non-zero status.
+THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+THE_CMD_FILE_NAME=$(basename $0)
+##
+### Tail: Init
+################################################################################
+
+
+################################################################################
+### Head: Util_Debug
+##
+
+util_debug_echo () {
+	if is_debug; then
+		echo "$@" 1>&2;
+	fi
+}
+
+##
+### Head: Util_Debug
+################################################################################
+
+
+################################################################################
+### Head: Base
+##
+find_dir_path () {
+	if [ ! -d $(dirname -- "$1") ]; then
+		dirname -- "$1"
+		return 1
+	fi
+	echo $(cd -P -- "$(dirname -- "$1")" && pwd -P)
+}
+
+##THIS_BASE_DIR_PATH=$(find_dir_path $0)
+
+## $ export DEBUG_NVIMRC_CTRL=true
+is_debug () {
+	if [ "$DEBUG_NVIMRC_CTRL" = "true" ]; then
+		return 0
+	fi
+
+	return 1
+}
+
+is_not_debug () {
+	! is_debug
+}
+
+base_var_init () {
+
+	#THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
+	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/.")
+
+	THE_CMD_VERSION='0.1'
+
+	THE_CMD_DIR_PATH="${THE_BASE_DIR_PATH}"
+
+	if [ "none${THE_CMD_FILE_NAME}" = 'none' ]; then
+		THE_CMD_FILE_NAME="nvimrc-ctrl"
+	fi
+
+	THE_CMD_FILE_PATH="${THE_CMD_DIR_PATH}/$THE_CMD_FILE_NAME"
+
+	## https://github.com/samwhelp/play-ubuntu-20.04-plan/blob/master/project/vimrc-profile/nvimrc-ctrl/nvimrc-ctrl
+	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/note-about-vim/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl/nvimrc-ctrl'
+
+
+	THE_TMP_DIR_PATH="/tmp"
+
+
+	THE_ASSET_DIR_NAME="asset"
+	THE_ASSET_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_ASSET_DIR_NAME"
+
+	THE_VAR_DIR_NAME="var"
+	THE_VAR_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_VAR_DIR_NAME"
+
+	THE_PROFILE_DIR_NAME=".${THE_CMD_FILE_NAME}-profile"
+	THE_PROFILE_DIR_PATH="$HOME/$THE_PROFILE_DIR_NAME"
+
+	THE_PROJECT_DIR_NAME="${THE_CMD_FILE_NAME}"
+	THE_PROJECT_DIR_PATH="$HOME/.local/share/$THE_PROJECT_DIR_NAME"
+
+	THE_CONFIG_DIR_NAME="${THE_CMD_FILE_NAME}"
+	THE_CONFIG_DIR_PATH="$HOME/.config/$THE_CONFIG_DIR_NAME"
+
+	THE_CACHE_DIR_NAME="${THE_CMD_FILE_NAME}"
+	THE_CACHE_DIR_PATH="$HOME/.cache/$THE_CACHE_DIR_NAME"
+
+
+	## Nvim
+	THE_NVIMRC_DIR_NAME="nvim"
+	THE_NVIMRC_DIR_PATH="$HOME/.config/$THE_NVIMRC_DIR_NAME"
+
+	## vimrc-profile
+	THE_VIMRC_PROFILE_DIR_NAME=".vimrc-profile"
+	THE_VIMRC_PROFILE_DIR_PATH="$HOME/$THE_VIMRC_PROFILE_DIR_NAME"
+
+}
+
+base_var_dump () {
+
+	is_not_debug && return 0
+
+	util_debug_echo
+	util_debug_echo "################################################################################"
+	util_debug_echo "### Head: var_dump"
+	util_debug_echo "##"
+	util_debug_echo "#"
+
+
+	util_debug_echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
+	util_debug_echo "THE_CMD_FILE_NAME=$THE_CMD_FILE_NAME"
+	util_debug_echo "THE_CMD_FILE_PATH=$THE_CMD_FILE_PATH"
+	util_debug_echo "THE_CMD_DIR_PATH=$THE_CMD_DIR_PATH"
+
+	util_debug_echo "THE_SELF_UPDATE_URL=$THE_SELF_UPDATE_URL"
+
+
+	util_debug_echo "THE_TMP_DIR_PATH=$THE_TMP_DIR_PATH"
+
+
+	util_debug_echo "THE_ASSET_DIR_NAME=$THE_ASSET_DIR_NAME"
+	util_debug_echo "THE_ASSET_DIR_PATH=$THE_ASSET_DIR_PATH"
+
+	util_debug_echo "THE_VAR_DIR_NAME=$THE_VAR_DIR_NAME"
+	util_debug_echo "THE_VAR_DIR_PATH=$THE_VAR_DIR_PATH"
+
+
+
+
+	util_debug_echo "THE_PROFILE_DIR_NAME=$THE_PROFILE_DIR_NAME"
+	util_debug_echo "THE_PROFILE_DIR_PATH=$THE_PROFILE_DIR_PATH"
+
+	util_debug_echo "THE_PROJECT_DIR_NAME=$THE_PROJECT_DIR_NAME"
+	util_debug_echo "THE_PROJECT_DIR_PATH=$THE_PROJECT_DIR_PATH"
+
+	util_debug_echo "THE_CONFIG_DIR_NAME=$THE_CONFIG_DIR_NAME"
+	util_debug_echo "THE_CONFIG_DIR_PATH=$THE_CONFIG_DIR_PATH"
+
+	util_debug_echo "THE_CACHE_DIR_NAME=$THE_CACHE_DIR_NAME"
+	util_debug_echo "THE_CACHE_DIR_PATH=$THE_CACHE_DIR_PATH"
+
+
+
+
+	util_debug_echo "THE_NVIMRC_DIR_NAME=$THE_NVIMRC_DIR_NAME"
+	util_debug_echo "THE_NVIMRC_DIR_PATH=$THE_NVIMRC_DIR_PATH"
+
+
+	util_debug_echo "THE_VIMRC_PROFILE_DIR_NAME=$THE_VIMRC_PROFILE_DIR_NAME"
+	util_debug_echo "THE_VIMRC_PROFILE_DIR_PATH=$THE_VIMRC_PROFILE_DIR_PATH"
+
+	util_debug_echo "#"
+	util_debug_echo "##"
+	util_debug_echo "### Tail: var_dump"
+	util_debug_echo "################################################################################"
+	util_debug_echo
+}
+
+
+base_var_init
+
+base_var_dump
+
+##
+### Tail: Base
+################################################################################
+
+
+################################################################################
+### Head: Util_SubCmd
+##
+
+sub_cmd_find_function_name () {
+	echo "sub_run_$1"
+}
+
+##
+### Tail: Util_SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Util_Self_Update
+##
+
+util_make_bin_dir () {
+	mkdir -p "$HOME/bin"
+}
+
+util_make_tmp_dir () {
+	THE_TMP_DIR_PATH="/tmp/tmp.$$.$RANDOM"
+	mkdir "$THE_TMP_DIR_PATH"
+}
+
+util_self_update_download_to_tmp_dir () {
+
+	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
+
+	wget -c "$THE_SELF_UPDATE_URL" -O "$tmp_file_path"
+
+}
+
+util_self_update_install_from_tmp_dir () {
+
+	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
+
+	echo "install -m 755 $tmp_file_path $THE_CMD_FILE_PATH"
+	install -m 755 "$tmp_file_path" "$THE_CMD_FILE_PATH"
+
+}
+
+util_self_update_check_cmd_exists () {
+
+	if ! [ -f "$THE_CMD_FILE_PATH" ]; then ## file not exists
+		return 0
+	fi
+
+
+	echo "File is exists:" "$THE_CMD_FILE_PATH"
+	echo
+
+	echo "Try to backup:"
+	echo
+
+	local now=$(date +%Y%m%d_%s)
+	local bak_dir_path="${THE_CMD_FILE_PATH}.bak"
+	local bak_file_path="${bak_dir_path}/${THE_CMD_FILE_NAME}.bak.$now"
+
+	mkdir -p $bak_dir_path
+
+	mv -v "$THE_CMD_FILE_PATH" "${bak_file_path}"
+
+	if [ "$?" != "0" ]; then
+		echo
+		echo 'Backup Failure!'
+		exit 1
+	fi
+
+	echo
+
+	return 0
+}
+
+util_self_update_print_version () {
+	echo
+	echo "Current Version:"
+
+	"$THE_CMD_FILE_PATH" version
+}
+
+util_self_update () {
+
+	util_make_bin_dir
+
+	util_make_tmp_dir
+
+	util_self_update_download_to_tmp_dir
+
+	util_self_update_check_cmd_exists && util_self_update_install_from_tmp_dir
+
+
+	util_self_update_print_version
+
+}
+
+
+main_version () {
+	echo $THE_CMD_VERSION
+}
+
+util_self_actions () {
+	grep '^sub_run' "${THE_CMD_FILE_PATH}" | cut -d ' ' -f 1 | awk -F 'sub_run_' '{print $2}' | sort -u
+}
+
+##
+### Tail: Util_Self_Update
+################################################################################
+
+
+################################################################################
+### Head: Sys
+##
+
+is_nvimrc_dir () {
+	local dir_path="$1"
+	local vimrc_file_path="$dir_path/init.vim"
+
+	if [ ! -f "$vimrc_file_path" ]; then
+		return 1
+	fi
+
+	return 0
+}
+
+is_not_nvimrc_dir () {
+	local dir_path="$1"
+	local vimrc_file_path="$dir_path/init.vim" ## ~/.vimrc-profile/demo/init.vim
+
+	if [ -f "$vimrc_file_path" ]; then ## check ~/.vimrc-profile/demo/init.vim
+		return 1
+	fi
+
+	return 0
+}
+
+nvimrc_find_dir_path_by_name () {
+	local name="$1"
+	echo "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+}
+
+
+
+nvimrc_check_nvimrc_dir_exists () {
+
+	local vimrc_dir_name="nvim"
+	local vimrc_dir_path="$HOME/.config/$vimrc_dir_name"
+
+	if ! [ -a "$vimrc_dir_path" ]; then ## file not exists
+		return 0
+	fi
+
+
+	if [ -h "$vimrc_dir_path" ]; then ## ~/.vim is folder
+		return 0
+	fi
+
+
+
+	echo "Dir is exists:" "$vimrc_dir_path"
+	echo
+
+	echo "Try to backup:"
+	echo
+
+	local now=$(date +%Y%m%d_%s)
+	local bak_dir_path="${HOME}/.backup/nvimrc.bak"
+	local bak_target_path="${bak_dir_path}/${vimrc_dir_name}.bak.${now}"
+
+	echo "mkdir -p ${bak_dir_path}"
+	mkdir -p "${bak_dir_path}"
+
+
+	echo "cp -a ${vimrc_dir_path} ${bak_target_path}"
+	cp -a "${vimrc_dir_path}" "${bak_target_path}"
+
+	if [ "$?" != "0" ]; then
+		echo
+		echo 'Backup Failure!'
+		#exit 1
+		return 1
+	fi
+
+	echo
+
+
+
+
+
+
+
+	return 0
+}
+
+
+
+
+##
+### Tail: Sys
+################################################################################
+
+
+################################################################################
+### Head: Model vimrc_profile_default
+##
+
+vimrc_profile_default () {
+	vimrc_profile_set 'default'
+}
+
+##
+### Tail: Model vimrc_profile_default
+################################################################################
+
+
+################################################################################
+### Head: Model vimrc_profile_list
+##
+
+
+
+vimrc_profile_list () {
+	#echo "vimrc_profile_list"
+	#echo "$@"
+
+	# nvimrc-ctrl list
+
+	local name=''
+	local dir_path=''
+
+	cd "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	## for name in $(ls ./ -1); do
+	for name in *; do
+		dir_path="$THE_VIMRC_PROFILE_DIR_PATH/$name" ## ~/.vimrc-profile/demo
+		if is_not_nvimrc_dir "$dir_path"; then ## check ~/.vimrc-profile/demo/vimrc
+			continue
+		fi
+
+		echo "$name"
+	done
+
+	cd "$OLDPWD"
+
+}
+
+##
+### Tail: Model vimrc_profile_list
+################################################################################
+
+
+################################################################################
+### Head: Model vimrc_profile_get
+##
+
+vimrc_profile_get () {
+	#echo "vimrc_profile_get"
+	#echo "$@"
+
+	# nvimrc-ctrl get
+
+	local dir_path=$(LANG=C file ~/.config/nvim | awk -F ' symbolic link to ' '{print $2}')
+	local name=$(basename "$dir_path")
+
+	echo $name
+
+}
+
+##
+### Tail: Model vimrc_profile_get
+################################################################################
+
+
+################################################################################
+### Head: Model vimrc_profile_set
+##
+
+vimrc_profile_set () {
+	#echo "vimrc_profile_set"
+	#echo "$@"
+
+
+	## $ nvimrc-ctrl set svim
+
+	local name="$1"
+	local source_dir_path="$THE_VIMRC_PROFILE_DIR_PATH/$name"
+	local target_dir_path="$THE_NVIMRC_DIR_PATH"
+
+	#echo "target_dir_path=$target_dir_path"
+	#echo "source_dir_path=$source_dir_path"
+
+	if is_not_nvimrc_dir "$source_dir_path"; then ## check ~/.vimrc-profile/demo/vimrc
+		echo "Not valid vimrc dir: $source_dir_path"
+		echo
+		echo 'Please run:'
+		echo '	$ nvimrc-ctrl list'
+		echo 'to find valid vimrc dir.'
+		return 1
+	fi
+
+	nvimrc_check_nvimrc_dir_exists
+
+
+	if [ -h "$target_dir_path" ]; then ## ~/.vim is symbolic link
+		echo
+		echo rm -f "$target_dir_path"
+		rm -f "$target_dir_path"
+	else
+		echo
+		echo rm -rf "$target_dir_path"
+		rm -rf "$target_dir_path"
+	fi
+
+
+
+
+	echo
+	echo ln -sf "$source_dir_path" "$target_dir_path"
+	ln -sf "$source_dir_path" "$target_dir_path"
+
+
+	echo
+	file "$target_dir_path"
+
+}
+
+
+##
+### Tail: Model vimrc_profile_set
+################################################################################
+
+
+################################################################################
+### Head: Model vimrc_profile_install
+##
+
+vimrc_profile_install () {
+
+	## $ nvimrc-ctrl install demo https://github.com/samwhelp/tool-svim.git
+
+	local name="$1"
+	local repo_url="$2"
+
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+
+	echo "git clone $repo_url $name"
+	git clone "$repo_url" "$name" ## git clone https://github.com/samwhelp/tool-svim.git demo
+
+	cd "$OLDPWD"
+
+}
+
+##
+### Tail: Model vimrc_profile_install
+################################################################################
+
+
+################################################################################
+### Head: Model vimrc_profile_remove
+##
+
+vimrc_profile_remove () {
+
+	## $ nvimrc-ctrl remove demo
+
+	local name="$1"
+	#echo $name
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+	local dir_path="./$name"
+
+	if [ ! -d "$dir_path" ]; then ## check ~/.vimrc-profile/demo
+		echo "Dir not exists: "$name""
+		return 1
+	fi
+
+	vimrc_profile_default
+
+	rm -rf "$dir_path"
+
+	cd "$OLDPWD"
+
+}
+
+##
+### Tail: Model vimrc_profile_remove
+################################################################################
+
+
+################################################################################
+### Head: SubCmd
+##
+
+sub_run_help () {
+	main_usage "$@"
+}
+
+sub_run_version () {
+	main_version "$@"
+}
+
+sub_run_self_update () {
+	util_self_update "$@"
+}
+
+sub_run_self_actions () {
+	util_self_actions "$@"
+}
+
+
+
+sub_run_default () {
+	#echo "sub_run_default"
+	vimrc_profile_default
+}
+
+
+sub_run_list () {
+	#echo "sub_run_list"
+	vimrc_profile_list "$@"
+}
+
+
+sub_run_get () {
+	#echo "sub_run_get"
+	vimrc_profile_get "$@"
+}
+
+
+sub_run_set () {
+	#echo "sub_run_set"
+	vimrc_profile_set "$@"
+}
+
+
+sub_run_install () {
+	#echo "sub_run_install"
+	vimrc_profile_install "$@"
+}
+
+
+sub_run_remove () {
+	#echo "sub_run_remove"
+	vimrc_profile_remove "$@"
+}
+
+##
+### Tail: SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Main
+##
+
+main_usage () {
+	##local cmd_name="$0"
+	local cmd_name="$THE_CMD_FILE_NAME"
+
+cat << EOF
+Usage:
+	$ $cmd_name [action]
+
+Example:
+
+	## help
+
+		$ $cmd_name
+		$ $cmd_name help
+
+	## version
+
+		$ $cmd_name version
+
+	## self_update
+
+		$ $cmd_name self_update
+
+	## self_actions
+
+		$ $cmd_name self_actions
+
+	## profile
+
+
+		$ $cmd_name default
+
+		$ $cmd_name list
+
+		$ $cmd_name get
+
+		$ $cmd_name set demo
+
+		$ $cmd_name install demo https://github.com/samwhelp/tool-svim.git
+
+		$ $cmd_name remove demo
+
+
+Debug:
+	$ export DEBUG_NVIMRC_CTRL=true
+
+EOF
+
+}
+
+main_check_args_size () {
+	if [ $1 -le 0 ]; then
+		shift
+		main_run_default_sub_cmd "$@"
+		exit 1
+	fi
+}
+
+main_run_default_sub_cmd () {
+	main_usage "$@"
+}
+
+main_run_sub_cmd () {
+
+	local sub_cmd="$1"
+
+	shift
+
+	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
+
+	## if ! command -v $function_name > /dev/null; then
+	if ! type -p $function_name > /dev/null; then
+		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
+
+		echo
+		main_run_default_sub_cmd "$@"
+		return 1
+	fi
+
+	"$function_name" "$@" ## run sub cmd function
+
+
+}
+
+## Start
+main_check_args_size $# "$@"
+
+main_run_sub_cmd "$@"
+
+##
+### Tail: Main
+################################################################################

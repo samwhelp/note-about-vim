@@ -1,0 +1,18 @@
+
+## /usr/local/share/bash-completion/completions/vimrc-ctrl
+## $ sudo install -Dm644 ./vimrc-ctrl /usr/local/share/bash-completion/completions/vimrc-ctrl
+
+_vimrc_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_VIMRC_CTRL=false vimrc-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _vimrc_ctrl vimrc-ctrl

@@ -53,5 +53,5 @@
 
 | 專案 |
 | --- |
-| [vimrc-ctrl](https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl) |
-| [nvimrc-ctrl](https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl) |
+| [vimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl) |
+| [nvimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl) |
