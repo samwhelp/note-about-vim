@@ -1,11 +1,11 @@
 ---
-title: Plugin
+title: 擴充套件
 nav_order: 7000
 has_children: true
 ---
 
 
-# Plugin
+# 擴充套件
 
 
 ## Plugin Manager
