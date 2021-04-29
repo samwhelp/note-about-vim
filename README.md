@@ -51,7 +51,16 @@
 
 ### 專案
 
-| 專案 |
+| 工具 |
 | --- |
 | [vimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl) |
 | [nvimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl) |
+
+
+| Vimrc |
+| --- |
+| [ivim](https://samwhelp.github.io/note-about-vim/read/project/ivim.html) |
+| [svim](https://samwhelp.github.io/note-about-vim/read/project/svim.html) |
+| [mvim](https://samwhelp.github.io/note-about-vim/read/project/mvim.html) |
+| [lvim](https://samwhelp.github.io/note-about-vim/read/project/lvim.html) |
+| [hvim](https://samwhelp.github.io/note-about-vim/read/project/hvim.html) |

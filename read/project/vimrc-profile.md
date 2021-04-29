@@ -1,6 +1,6 @@
 ---
 title: vimrc-profile
-nav_order: 8002
+nav_order: 8000
 has_children: false
 parent: 專案
 ---
