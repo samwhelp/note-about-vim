@@ -1,0 +1,894 @@
+#!/usr/bin/env bash
+
+
+################################################################################
+### Head: Url
+##
+
+# * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
+# * https://www.freedesktop.org/wiki/Specifications/XSettingsRegistry/
+
+##
+### Tail: Url
+################################################################################
+
+
+################################################################################
+### Head: Init
+##
+set -e ## for Exit immediately if a command exits with a non-zero status.
+THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+THE_CMD_FILE_NAME=$(basename $0)
+##
+### Tail: Init
+################################################################################
+
+
+################################################################################
+### Head: Util_Debug
+##
+
+util_debug_echo () {
+	if is_debug; then
+		echo "$@" 1>&2;
+	fi
+}
+
+##
+### Head: Util_Debug
+################################################################################
+
+
+################################################################################
+### Head: Base
+##
+find_dir_path () {
+	if [ ! -d $(dirname -- "$1") ]; then
+		dirname -- "$1"
+		return 1
+	fi
+	echo $(cd -P -- "$(dirname -- "$1")" && pwd -P)
+}
+
+##THIS_BASE_DIR_PATH=$(find_dir_path $0)
+
+## $ export DEBUG_VIMRC_GET=true
+is_debug () {
+	if [ "$DEBUG_VIMRC_GET" = "true" ]; then
+		return 0
+	fi
+
+	return 1
+}
+
+is_not_debug () {
+	! is_debug
+}
+
+base_var_init () {
+
+	#THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
+	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/.")
+
+	THE_CMD_VERSION='0.1'
+
+	THE_CMD_DIR_PATH="${THE_BASE_DIR_PATH}"
+
+	if [ "none${THE_CMD_FILE_NAME}" = 'none' ]; then
+		THE_CMD_FILE_NAME="vimrc-get"
+	fi
+
+	THE_CMD_FILE_PATH="${THE_CMD_DIR_PATH}/$THE_CMD_FILE_NAME"
+
+	## https://github.com/samwhelp/play-ubuntu-20.04-plan/blob/master/project/vimrc-profile/vimrc-get/vimrc-get
+	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/note-about-vim/gh-pages/_demo/project/vimrc-profile/vimrc-get/vimrc-get'
+
+
+	THE_TMP_DIR_PATH="/tmp"
+
+
+	THE_ASSET_DIR_NAME="asset"
+	THE_ASSET_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_ASSET_DIR_NAME"
+
+	THE_VAR_DIR_NAME="var"
+	THE_VAR_DIR_PATH="$THE_PLAN_DIR_PATH/$THE_VAR_DIR_NAME"
+
+	THE_PROFILE_DIR_NAME=".${THE_CMD_FILE_NAME}-profile"
+	THE_PROFILE_DIR_PATH="$HOME/$THE_PROFILE_DIR_NAME"
+
+	THE_PROJECT_DIR_NAME="${THE_CMD_FILE_NAME}"
+	THE_PROJECT_DIR_PATH="$HOME/.local/share/$THE_PROJECT_DIR_NAME"
+
+	THE_CONFIG_DIR_NAME="${THE_CMD_FILE_NAME}"
+	THE_CONFIG_DIR_PATH="$HOME/.config/$THE_CONFIG_DIR_NAME"
+
+	THE_CACHE_DIR_NAME="${THE_CMD_FILE_NAME}"
+	THE_CACHE_DIR_PATH="$HOME/.cache/$THE_CACHE_DIR_NAME"
+
+
+	## Vim
+
+	THE_VIMRC_DIR_NAME=".vim"
+	THE_VIMRC_DIR_PATH="$HOME/$THE_VIMRC_DIR_NAME"
+
+
+	THE_VIMRC_PROFILE_DIR_NAME=".vimrc-profile"
+	THE_VIMRC_PROFILE_DIR_PATH="$HOME/$THE_VIMRC_PROFILE_DIR_NAME"
+
+}
+
+base_var_dump () {
+
+	is_not_debug && return 0
+
+	util_debug_echo
+	util_debug_echo "################################################################################"
+	util_debug_echo "### Head: var_dump"
+	util_debug_echo "##"
+	util_debug_echo "#"
+
+
+	util_debug_echo "THE_PLAN_DIR_PATH=$THE_PLAN_DIR_PATH"
+
+	util_debug_echo "THE_CMD_FILE_NAME=$THE_CMD_FILE_NAME"
+	util_debug_echo "THE_CMD_FILE_PATH=$THE_CMD_FILE_PATH"
+	util_debug_echo "THE_CMD_DIR_PATH=$THE_CMD_DIR_PATH"
+
+	util_debug_echo "THE_SELF_UPDATE_URL=$THE_SELF_UPDATE_URL"
+
+
+	util_debug_echo "THE_TMP_DIR_PATH=$THE_TMP_DIR_PATH"
+
+
+	util_debug_echo "THE_ASSET_DIR_NAME=$THE_ASSET_DIR_NAME"
+	util_debug_echo "THE_ASSET_DIR_PATH=$THE_ASSET_DIR_PATH"
+
+	util_debug_echo "THE_VAR_DIR_NAME=$THE_VAR_DIR_NAME"
+	util_debug_echo "THE_VAR_DIR_PATH=$THE_VAR_DIR_PATH"
+
+
+
+
+	util_debug_echo "THE_PROFILE_DIR_NAME=$THE_PROFILE_DIR_NAME"
+	util_debug_echo "THE_PROFILE_DIR_PATH=$THE_PROFILE_DIR_PATH"
+
+	util_debug_echo "THE_PROJECT_DIR_NAME=$THE_PROJECT_DIR_NAME"
+	util_debug_echo "THE_PROJECT_DIR_PATH=$THE_PROJECT_DIR_PATH"
+
+	util_debug_echo "THE_CONFIG_DIR_NAME=$THE_CONFIG_DIR_NAME"
+	util_debug_echo "THE_CONFIG_DIR_PATH=$THE_CONFIG_DIR_PATH"
+
+	util_debug_echo "THE_CACHE_DIR_NAME=$THE_CACHE_DIR_NAME"
+	util_debug_echo "THE_CACHE_DIR_PATH=$THE_CACHE_DIR_PATH"
+
+
+
+
+	util_debug_echo "THE_VIMRC_DIR_NAME=$THE_VIMRC_DIR_NAME"
+	util_debug_echo "THE_VIMRC_DIR_PATH=$THE_VIMRC_DIR_PATH"
+
+
+	util_debug_echo "THE_VIMRC_PROFILE_DIR_NAME=$THE_VIMRC_PROFILE_DIR_NAME"
+	util_debug_echo "THE_VIMRC_PROFILE_DIR_PATH=$THE_VIMRC_PROFILE_DIR_PATH"
+
+	util_debug_echo "#"
+	util_debug_echo "##"
+	util_debug_echo "### Tail: var_dump"
+	util_debug_echo "################################################################################"
+	util_debug_echo
+}
+
+
+base_var_init
+
+base_var_dump
+
+##
+### Tail: Base
+################################################################################
+
+
+################################################################################
+### Head: Util_SubCmd
+##
+
+sub_cmd_find_function_name () {
+	echo "sub_run_$1"
+}
+
+##
+### Tail: Util_SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Util_Self_Update
+##
+
+util_make_bin_dir () {
+	mkdir -p "$HOME/bin"
+}
+
+util_make_tmp_dir () {
+	THE_TMP_DIR_PATH="/tmp/tmp.$$.$RANDOM"
+	mkdir "$THE_TMP_DIR_PATH"
+}
+
+util_self_update_download_to_tmp_dir () {
+
+	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
+
+	wget -c "$THE_SELF_UPDATE_URL" -O "$tmp_file_path"
+
+}
+
+util_self_update_install_from_tmp_dir () {
+
+	local tmp_file_path="${THE_TMP_DIR_PATH}/${THE_CMD_FILE_NAME}"
+
+	echo "install -m 755 $tmp_file_path $THE_CMD_FILE_PATH"
+	install -m 755 "$tmp_file_path" "$THE_CMD_FILE_PATH"
+
+}
+
+util_self_update_check_cmd_exists () {
+
+	if ! [ -f "$THE_CMD_FILE_PATH" ]; then ## file not exists
+		return 0
+	fi
+
+
+	echo "File is exists:" "$THE_CMD_FILE_PATH"
+	echo
+
+	echo "Try to backup:"
+	echo
+
+	local now=$(date +%Y%m%d_%s)
+	local bak_dir_path="${THE_CMD_FILE_PATH}.bak"
+	local bak_file_path="${bak_dir_path}/${THE_CMD_FILE_NAME}.bak.$now"
+
+	mkdir -p $bak_dir_path
+
+	mv -v "$THE_CMD_FILE_PATH" "${bak_file_path}"
+
+	if [ "$?" != "0" ]; then
+		echo
+		echo 'Backup Failure!'
+		exit 1
+	fi
+
+	echo
+
+	return 0
+}
+
+util_self_update_print_version () {
+	echo
+	echo "Current Version:"
+
+	"$THE_CMD_FILE_PATH" version
+}
+
+util_self_update () {
+
+	util_make_bin_dir
+
+	util_make_tmp_dir
+
+	util_self_update_download_to_tmp_dir
+
+	util_self_update_check_cmd_exists && util_self_update_install_from_tmp_dir
+
+
+	util_self_update_print_version
+
+}
+
+
+main_version () {
+	echo $THE_CMD_VERSION
+}
+
+util_self_actions () {
+	grep '^sub_run' "${THE_CMD_FILE_PATH}" | cut -d ' ' -f 1 | awk -F 'sub_run_' '{print $2}' | sort -u
+}
+
+##
+### Tail: Util_Self_Update
+################################################################################
+
+
+################################################################################
+### Head: Sys
+##
+
+is_vimrc_dir () {
+	local dir_path="$1"
+	local vimrc_file_path="$dir_path/vimrc"
+
+	if [ ! -f "$vimrc_file_path" ]; then
+		return 1
+	fi
+
+	return 0
+}
+
+is_not_vimrc_dir () {
+	local dir_path="$1"
+	local vimrc_file_path="$dir_path/vimrc" ## ~/.vimrc-profile/demo/vimrc
+
+	if [ -f "$vimrc_file_path" ]; then ## check ~/.vimrc-profile/demo/vimrc
+		return 1
+	fi
+
+	return 0
+}
+
+vimrc_find_dir_path_by_name () {
+	local name="$1"
+	echo "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+}
+
+
+
+vimrc_check_vimrc_dir_exists () {
+
+	local vimrc_dir_name=".vim"
+	local vimrc_dir_path="$HOME/$vimrc_dir_name"
+
+	if ! [ -a "$vimrc_dir_path" ]; then ## file not exists
+		return 0
+	fi
+
+
+	if [ -h "$vimrc_dir_path" ]; then ## ~/.vim is folder
+		return 0
+	fi
+
+
+
+	echo "Dir is exists:" "$vimrc_dir_path"
+	echo
+
+	echo "Try to backup:"
+	echo
+
+	local now=$(date +%Y%m%d_%s)
+	local bak_dir_path="${HOME}/.backup/vimrc.bak"
+	local bak_target_path="${bak_dir_path}/${vimrc_dir_name}.bak.${now}"
+
+	echo "mkdir -p ${bak_dir_path}"
+	mkdir -p "${bak_dir_path}"
+
+
+	echo "cp -a ${vimrc_dir_path} ${bak_target_path}"
+	cp -a "${vimrc_dir_path}" "${bak_target_path}"
+
+	if [ "$?" != "0" ]; then
+		echo
+		echo 'Backup Failure!'
+		#exit 1
+		return 1
+	fi
+
+	echo
+
+
+
+
+
+
+
+	return 0
+}
+
+
+vimrc_check_vimrc_file_exists () {
+
+	# :help vimrc
+
+	local vimrc_file_name=".vimrc"
+	local vimrc_file_path="$HOME/$vimrc_file_name"
+
+	if ! [ -a "$vimrc_file_path" ]; then ## file not exists
+		return 0
+	fi
+
+
+	echo "File is exists:" "$vimrc_file_path"
+	echo
+
+	echo "Try to backup:"
+	echo
+
+	local now=$(date +%Y%m%d_%s)
+	local bak_dir_path="${HOME}/.backup/vimrc.bak"
+	local bak_target_path="${bak_dir_path}/${vimrc_file_name}.bak.${now}"
+
+	echo "mkdir -p ${bak_dir_path}"
+	mkdir -p "${bak_dir_path}"
+
+	echo "mv ${vimrc_file_path} ${bak_target_path}"
+	mv "${vimrc_file_path}" "${bak_target_path}"
+
+	if [ "$?" != "0" ]; then
+		echo
+		echo 'Backup Failure!'
+		#exit 1
+		return 1
+	fi
+
+	echo
+
+	return 0
+}
+
+
+##
+### Tail: Sys
+################################################################################
+
+
+################################################################################
+### Head: Model all_install
+##
+
+all_install () {
+	svim_install
+	ivim_install
+	mvim_install
+	lvim_install
+	hvim_install
+}
+
+
+
+##
+### Tail: Model all_install
+################################################################################
+
+
+################################################################################
+### Head: Model svim_install
+##
+
+svim_install () {
+	## svim_repo_clone "$1" 'https://github.com/samwhelp/tool-svim.git'
+	svim_repo_clone 'svim' 'https://github.com/samwhelp/tool-svim.git'
+	svim_bin_install
+	svim_app_install
+
+}
+
+svim_repo_clone () {
+
+	## $ vimrc-get svim
+
+	local name="$1"
+	local repo_url="$2"
+
+	if [ "none$name" == 'none' ]; then
+		name="svim"
+	fi
+
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+
+	if [ -d "$name" ]; then
+		echo "## Is Exists:" "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+		return 0;
+	fi
+
+	echo "git clone $repo_url $name"
+	git clone "$repo_url" "$name" ## git clone https://github.com/samwhelp/tool-svim.git svim
+
+	cd "$OLDPWD"
+
+}
+
+svim_bin_install () {
+	echo "install -Dm 755 $HOME/.vimrc-profile/svim/.ctrl/asset/nvim/bin/svim $HOME/.local/bin/svim"
+	install -Dm 755 "$HOME/.vimrc-profile/svim/.ctrl/asset/nvim/bin/svim" "$HOME/.local/bin/svim"
+}
+
+svim_app_install () {
+	echo "install -Dm 644 $HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop $HOME/.local/share/applications/svim.desktop"
+	install -Dm 644 "$HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop" "$HOME/.local/share/applications/svim.desktop"
+}
+
+##
+### Tail: Model svim_install
+################################################################################
+
+
+################################################################################
+### Head: Model ivim_install
+##
+
+ivim_install () {
+	## ivim_repo_clone "$1" 'https://github.com/samwhelp/tool-ivim.git'
+	ivim_repo_clone 'ivim' 'https://github.com/samwhelp/tool-ivim.git'
+	ivim_bin_install
+	ivim_app_install
+
+}
+
+ivim_repo_clone () {
+
+	## $ vimrc-get ivim
+
+	local name="$1"
+	local repo_url="$2"
+
+	if [ "none$name" == 'none' ]; then
+		name="ivim"
+	fi
+
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+
+	if [ -d "$name" ]; then
+		echo "## Is Exists:" "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+		return 0;
+	fi
+
+	echo "git clone $repo_url $name"
+	git clone "$repo_url" "$name" ## git clone https://github.com/samwhelp/tool-ivim.git ivim
+
+	cd "$OLDPWD"
+
+}
+
+ivim_bin_install () {
+	echo "install -Dm 755 $HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/bin/ivim $HOME/.local/bin/ivim"
+	install -Dm 755 "$HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/bin/ivim" "$HOME/.local/bin/ivim"
+}
+
+ivim_app_install () {
+	echo "install -Dm 644 $HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/desktop/ivim.desktop $HOME/.local/share/applications/ivim.desktop"
+	install -Dm 644 "$HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/desktop/ivim.desktop" "$HOME/.local/share/applications/ivim.desktop"
+}
+
+##
+### Tail: Model ivim_install
+################################################################################
+
+
+################################################################################
+### Head: Model mvim_install
+##
+
+mvim_install () {
+	## mvim_repo_clone "$1" 'https://github.com/samwhelp/tool-mvim.git'
+	mvim_repo_clone 'mvim' 'https://github.com/samwhelp/tool-mvim.git'
+	mvim_bin_install
+	mvim_app_install
+
+}
+
+mvim_repo_clone () {
+
+	## $ vimrc-get mvim
+
+	local name="$1"
+	local repo_url="$2"
+
+	if [ "none$name" == 'none' ]; then
+		name="mvim"
+	fi
+
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+
+	if [ -d "$name" ]; then
+		echo "## Is Exists:" "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+		return 0;
+	fi
+
+	echo "git clone $repo_url $name"
+	git clone "$repo_url" "$name" ## git clone https://github.com/samwhelp/tool-mvim.git mvim
+
+	cd "$OLDPWD"
+
+}
+
+mvim_bin_install () {
+	echo "install -Dm 755 $HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/bin/mvim $HOME/.local/bin/mvim"
+	install -Dm 755 "$HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/bin/mvim" "$HOME/.local/bin/mvim"
+}
+
+mvim_app_install () {
+	echo "install -Dm 644 $HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop $HOME/.local/share/applications/mvim.desktop"
+	install -Dm 644 "$HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop" "$HOME/.local/share/applications/mvim.desktop"
+}
+
+##
+### Tail: Model mvim_install
+################################################################################
+
+
+################################################################################
+### Head: Model lvim_install
+##
+
+lvim_install () {
+	## lvim_repo_clone "$1" 'https://github.com/samwhelp/tool-lvim.git'
+	lvim_repo_clone 'lvim' 'https://github.com/samwhelp/tool-lvim.git'
+	lvim_bin_install
+	lvim_app_install
+
+}
+
+lvim_repo_clone () {
+
+	## $ vimrc-get lvim
+
+	local name="$1"
+	local repo_url="$2"
+
+	if [ "none$name" == 'none' ]; then
+		name="lvim"
+	fi
+
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+
+	if [ -d "$name" ]; then
+		echo "## Is Exists:" "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+		return 0;
+	fi
+
+	echo "git clone $repo_url $name"
+	git clone "$repo_url" "$name" ## git clone https://github.com/samwhelp/tool-lvim.git lvim
+
+	cd "$OLDPWD"
+
+}
+
+lvim_bin_install () {
+	echo "install -Dm 755 $HOME/.vimrc-profile/lvim/.ctrl/asset/nvim/bin/lvim $HOME/.local/bin/lvim"
+	install -Dm 755 "$HOME/.vimrc-profile/lvim/.ctrl/asset/nvim/bin/lvim" "$HOME/.local/bin/lvim"
+}
+
+lvim_app_install () {
+	echo "install -Dm 644 $HOME/.vimrc-profile/lvim/.ctrl/asset/nvim/desktop/lvim.desktop $HOME/.local/share/applications/lvim.desktop"
+	install -Dm 644 "$HOME/.vimrc-profile/lvim/.ctrl/asset/nvim/desktop/lvim.desktop" "$HOME/.local/share/applications/lvim.desktop"
+}
+
+##
+### Tail: Model lvim_install
+################################################################################
+
+
+################################################################################
+### Head: Model hvim_install
+##
+
+hvim_install () {
+	## hvim_repo_clone "$1" 'https://github.com/samwhelp/tool-hvim.git'
+	hvim_repo_clone 'hvim' 'https://github.com/samwhelp/tool-hvim.git'
+	hvim_bin_install
+	hvim_app_install
+
+}
+
+hvim_repo_clone () {
+
+	## $ vimrc-get hvim
+
+	local name="$1"
+	local repo_url="$2"
+
+	if [ "none$name" == 'none' ]; then
+		name="hvim"
+	fi
+
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH"
+
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH" ## cd ~/.vimrc-profile
+
+
+	if [ -d "$name" ]; then
+		echo "## Is Exists:" "$THE_VIMRC_PROFILE_DIR_PATH/$name"
+		return 0;
+	fi
+
+	echo "git clone $repo_url $name"
+	git clone "$repo_url" "$name" ## git clone https://github.com/samwhelp/tool-hvim.git hvim
+
+	cd "$OLDPWD"
+
+}
+
+hvim_bin_install () {
+	echo "install -Dm 755 $HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/bin/hvim $HOME/.local/bin/hvim"
+	install -Dm 755 "$HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/bin/hvim" "$HOME/.local/bin/hvim"
+}
+
+hvim_app_install () {
+	echo "install -Dm 644 $HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop $HOME/.local/share/applications/hvim.desktop"
+	install -Dm 644 "$HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop" "$HOME/.local/share/applications/hvim.desktop"
+}
+
+##
+### Tail: Model hvim_install
+################################################################################
+
+
+################################################################################
+### Head: SubCmd
+##
+
+sub_run_help () {
+	main_usage "$@"
+}
+
+sub_run_version () {
+	main_version "$@"
+}
+
+sub_run_self_update () {
+	util_self_update "$@"
+}
+
+sub_run_self_actions () {
+	util_self_actions "$@"
+}
+
+
+
+sub_run_all () {
+	#echo "sub_run_all"
+	all_install "$@"
+}
+
+
+sub_run_svim () {
+	#echo "sub_run_svim"
+	svim_install "$@"
+}
+
+
+sub_run_ivim () {
+	#echo "sub_run_ivim"
+	ivim_install "$@"
+}
+
+
+sub_run_mvim () {
+	#echo "sub_run_mvim"
+	mvim_install "$@"
+}
+
+
+sub_run_lvim () {
+	#echo "sub_run_lvim"
+	lvim_install "$@"
+}
+
+
+sub_run_hvim () {
+	#echo "sub_run_hvim"
+	hvim_install "$@"
+}
+
+##
+### Tail: SubCmd
+################################################################################
+
+
+################################################################################
+### Head: Main
+##
+
+main_usage () {
+	##local cmd_name="$0"
+	local cmd_name="$THE_CMD_FILE_NAME"
+
+cat << EOF
+Usage:
+	$ $cmd_name [action]
+
+Example:
+
+	## help
+
+		$ $cmd_name
+		$ $cmd_name help
+
+	## version
+
+		$ $cmd_name version
+
+	## self_update
+
+		$ $cmd_name self_update
+
+	## self_actions
+
+		$ $cmd_name self_actions
+
+	## profile
+
+
+		$ $cmd_name all
+
+		$ $cmd_name svim
+
+		$ $cmd_name ivim
+
+		$ $cmd_name mvim
+
+		$ $cmd_name lvim
+
+		$ $cmd_name hvim
+
+
+Debug:
+	$ export DEBUG_VIMRC_GET=true
+
+EOF
+
+}
+
+main_check_args_size () {
+	if [ $1 -le 0 ]; then
+		shift
+		main_run_default_sub_cmd "$@"
+		exit 1
+	fi
+}
+
+main_run_default_sub_cmd () {
+	main_usage "$@"
+}
+
+main_run_sub_cmd () {
+
+	local sub_cmd="$1"
+
+	shift
+
+	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
+
+	## if ! command -v $function_name > /dev/null; then
+	if ! type -p $function_name > /dev/null; then
+		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
+
+		echo
+		main_run_default_sub_cmd "$@"
+		return 1
+	fi
+
+	"$function_name" "$@" ## run sub cmd function
+
+
+}
+
+## Start
+main_check_args_size $# "$@"
+
+main_run_sub_cmd "$@"
+
+##
+### Tail: Main
+################################################################################
