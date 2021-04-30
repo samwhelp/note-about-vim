@@ -15,4 +15,15 @@ parent: Plugin
 
 ## 範例
 
-* [vim-plug/start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/start)
+
+### Usage
+
+* vim-plug / [start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/start)
+* vim-plug / [begin-args](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/begin-args)
+
+
+### Init
+
+
+* vim-plug / vim-plug-download / [shell-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/vim-plug-download/shell-script)
+* vim-plug / vim-plug-download / [vim-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/vim-plug-download/vim-script)
