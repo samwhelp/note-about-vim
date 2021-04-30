@@ -27,3 +27,4 @@ parent: Plugin
 
 * vim-plug / vim-plug-download / [shell-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/vim-plug-download/shell-script)
 * vim-plug / vim-plug-download / [vim-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/vim-plug-download/vim-script)
+* vim-plug / vim-plug-download / [vim-script-autoload](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/vim-plug-download/vim-script-autoload)

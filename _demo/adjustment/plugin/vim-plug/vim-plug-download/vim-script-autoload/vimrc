@@ -1,0 +1,4 @@
+
+let &runtimepath = '.' . ',' . &runtimepath
+
+call VimPlug#Util#Download('~/.cache/xvim/site/autoload/plug.vim')
