@@ -5,11 +5,13 @@
 ##
 
 hvim_install () {
+	echo
 	## hvim_repo_clone "$1" 'https://github.com/samwhelp/tool-hvim.git'
 	hvim_repo_clone 'hvim' 'https://github.com/samwhelp/tool-hvim.git'
 	hvim_bin_install
 	hvim_app_install
-
+	hvim_vim_plug_prepare
+	echo
 }
 
 hvim_repo_clone () {
@@ -50,6 +52,11 @@ hvim_bin_install () {
 hvim_app_install () {
 	echo "install -Dm 644 $HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop $HOME/.local/share/applications/hvim.desktop"
 	install -Dm 644 "$HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop" "$HOME/.local/share/applications/hvim.desktop"
+}
+
+hvim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/hvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/hvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 }
 
 ##

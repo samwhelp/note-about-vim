@@ -454,11 +454,13 @@ all_install () {
 ##
 
 svim_install () {
+	echo
 	## svim_repo_clone "$1" 'https://github.com/samwhelp/tool-svim.git'
 	svim_repo_clone 'svim' 'https://github.com/samwhelp/tool-svim.git'
 	svim_bin_install
 	svim_app_install
-
+	svim_vim_plug_prepare
+	echo
 }
 
 svim_repo_clone () {
@@ -501,6 +503,11 @@ svim_app_install () {
 	install -Dm 644 "$HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop" "$HOME/.local/share/applications/svim.desktop"
 }
 
+svim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/svim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/svim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
 ##
 ### Tail: Model svim_install
 ################################################################################
@@ -511,11 +518,12 @@ svim_app_install () {
 ##
 
 ivim_install () {
+	echo
 	## ivim_repo_clone "$1" 'https://github.com/samwhelp/tool-ivim.git'
 	ivim_repo_clone 'ivim' 'https://github.com/samwhelp/tool-ivim.git'
 	ivim_bin_install
 	ivim_app_install
-
+	echo
 }
 
 ivim_repo_clone () {
@@ -568,11 +576,12 @@ ivim_app_install () {
 ##
 
 mvim_install () {
+	echo
 	## mvim_repo_clone "$1" 'https://github.com/samwhelp/tool-mvim.git'
 	mvim_repo_clone 'mvim' 'https://github.com/samwhelp/tool-mvim.git'
 	mvim_bin_install
 	mvim_app_install
-
+	echo
 }
 
 mvim_repo_clone () {
@@ -615,6 +624,11 @@ mvim_app_install () {
 	install -Dm 644 "$HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop" "$HOME/.local/share/applications/mvim.desktop"
 }
 
+mvim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/mvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/mvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
 ##
 ### Tail: Model mvim_install
 ################################################################################
@@ -625,11 +639,13 @@ mvim_app_install () {
 ##
 
 lvim_install () {
+	echo
 	## lvim_repo_clone "$1" 'https://github.com/samwhelp/tool-lvim.git'
 	lvim_repo_clone 'lvim' 'https://github.com/samwhelp/tool-lvim.git'
 	lvim_bin_install
 	lvim_app_install
-
+	lvim_vim_plug_prepare
+	echo
 }
 
 lvim_repo_clone () {
@@ -672,6 +688,11 @@ lvim_app_install () {
 	install -Dm 644 "$HOME/.vimrc-profile/lvim/.ctrl/asset/nvim/desktop/lvim.desktop" "$HOME/.local/share/applications/lvim.desktop"
 }
 
+lvim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/lvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/lvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
 ##
 ### Tail: Model lvim_install
 ################################################################################
@@ -682,11 +703,13 @@ lvim_app_install () {
 ##
 
 hvim_install () {
+	echo
 	## hvim_repo_clone "$1" 'https://github.com/samwhelp/tool-hvim.git'
 	hvim_repo_clone 'hvim' 'https://github.com/samwhelp/tool-hvim.git'
 	hvim_bin_install
 	hvim_app_install
-
+	hvim_vim_plug_prepare
+	echo
 }
 
 hvim_repo_clone () {
@@ -727,6 +750,11 @@ hvim_bin_install () {
 hvim_app_install () {
 	echo "install -Dm 644 $HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop $HOME/.local/share/applications/hvim.desktop"
 	install -Dm 644 "$HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop" "$HOME/.local/share/applications/hvim.desktop"
+}
+
+hvim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/hvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/hvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 }
 
 ##

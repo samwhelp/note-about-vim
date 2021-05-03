@@ -5,11 +5,12 @@
 ##
 
 ivim_install () {
+	echo
 	## ivim_repo_clone "$1" 'https://github.com/samwhelp/tool-ivim.git'
 	ivim_repo_clone 'ivim' 'https://github.com/samwhelp/tool-ivim.git'
 	ivim_bin_install
 	ivim_app_install
-
+	echo
 }
 
 ivim_repo_clone () {

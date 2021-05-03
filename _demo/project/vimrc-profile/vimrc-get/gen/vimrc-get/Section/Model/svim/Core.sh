@@ -5,11 +5,13 @@
 ##
 
 svim_install () {
+	echo
 	## svim_repo_clone "$1" 'https://github.com/samwhelp/tool-svim.git'
 	svim_repo_clone 'svim' 'https://github.com/samwhelp/tool-svim.git'
 	svim_bin_install
 	svim_app_install
-
+	svim_vim_plug_prepare
+	echo
 }
 
 svim_repo_clone () {
@@ -50,6 +52,11 @@ svim_bin_install () {
 svim_app_install () {
 	echo "install -Dm 644 $HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop $HOME/.local/share/applications/svim.desktop"
 	install -Dm 644 "$HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop" "$HOME/.local/share/applications/svim.desktop"
+}
+
+svim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/svim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/svim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 }
 
 ##

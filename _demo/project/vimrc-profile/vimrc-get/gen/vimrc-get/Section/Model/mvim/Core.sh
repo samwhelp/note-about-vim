@@ -5,11 +5,12 @@
 ##
 
 mvim_install () {
+	echo
 	## mvim_repo_clone "$1" 'https://github.com/samwhelp/tool-mvim.git'
 	mvim_repo_clone 'mvim' 'https://github.com/samwhelp/tool-mvim.git'
 	mvim_bin_install
 	mvim_app_install
-
+	echo
 }
 
 mvim_repo_clone () {
@@ -50,6 +51,11 @@ mvim_bin_install () {
 mvim_app_install () {
 	echo "install -Dm 644 $HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop $HOME/.local/share/applications/mvim.desktop"
 	install -Dm 644 "$HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop" "$HOME/.local/share/applications/mvim.desktop"
+}
+
+mvim_vim_plug_prepare () {
+	echo "curl -fLo $HOME/.cache/mvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+	curl -fLo "$HOME/.cache/mvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 }
 
 ##
