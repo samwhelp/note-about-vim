@@ -17,7 +17,9 @@ help:
 	@echo
 	@echo '	$$ make remote-install'
 	@echo
-	@echo '	$$ make bash-completion-install'
+	@echo '	$$ make manjaro-bash-completion-install'
+	@echo
+	@echo '	$$ make ubuntu-bash-completion-install'
 	@echo
 
 .PHONY: help
@@ -33,12 +35,18 @@ app:
 .PHONY: app
 
 
-bash-completion-install:
+manjaro-bash-completion-install:
 	sudo install -Dm644 ./completion/bash/nvimrc-ctrl /usr/local/share/bash-completion/completions/nvimrc-ctrl
-.PHONY: bash-completion-install
+.PHONY: manjaro-bash-completion-install
 
-#sudo mkdir -p /usr/local/share/bash-completion/completions
+
+ubuntu-bash-completion-install:
+	sudo install -Dm644 ./completion/bash/nvimrc-ctrl /etc/bash_completion.d/nvimrc-ctrl
+.PHONY: ubuntu-bash-completion-install
+
+
 install: app
+#	sudo mkdir -p /usr/local/share/bash-completion/completions
 	install -Dm755 ./nvimrc-ctrl ~/.local/bin/nvimrc-ctrl
 .PHONY: install
 

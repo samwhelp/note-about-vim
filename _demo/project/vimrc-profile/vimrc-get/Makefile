@@ -17,7 +17,9 @@ help:
 	@echo
 	@echo '	$$ make remote-install'
 	@echo
-	@echo '	$$ make bash-completion-install'
+	@echo '	$$ make manjaro-bash-completion-install'
+	@echo
+	@echo '	$$ make ubuntu-bash-completion-install'
 	@echo
 
 .PHONY: help
@@ -33,12 +35,18 @@ app:
 .PHONY: app
 
 
-bash-completion-install:
+manjaro-bash-completion-install:
 	sudo install -Dm644 ./completion/bash/vimrc-get /usr/local/share/bash-completion/completions/vimrc-get
-.PHONY: bash-completion-install
+.PHONY: manjaro-bash-completion-install
 
-#sudo mkdir -p /usr/local/share/bash-completion/completions
+
+ubuntu-bash-completion-install:
+	sudo install -Dm644 ./completion/bash/vimrc-get /etc/bash_completion.d/vimrc-get
+.PHONY: ubuntu-bash-completion-install
+
+
 install: app
+#	sudo mkdir -p /usr/local/share/bash-completion/completions
 	install -Dm755 ./vimrc-get ~/.local/bin/vimrc-get
 .PHONY: install
 
