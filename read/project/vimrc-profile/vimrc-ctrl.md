@@ -9,6 +9,11 @@ grand_parent: 專案
 # vimrc-ctrl
 
 
+## Link
+
+* [vimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)
+
+
 ## Usage
 
 ### install

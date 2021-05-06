@@ -9,6 +9,11 @@ grand_parent: 專案
 # vimrc-get
 
 
+## Link
+
+* [vimrc-get](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get)
+
+
 ## Usage
 
 ### svim

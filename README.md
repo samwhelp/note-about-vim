@@ -38,7 +38,7 @@
 | 議題 |
 | --- |
 | [快速切換](https://samwhelp.github.io/note-about-vim/read/adjustment/keybind/quick-switch/) |
-| [Window 操作](https://samwhelp.github.io/note-about-vim/read/adjustment/keybind/window/) |
+| [分割視窗](https://samwhelp.github.io/note-about-vim/read/adjustment/keybind/window/) |
 | [編輯](https://samwhelp.github.io/note-about-vim/read/adjustment/keybind/edit/) |
 
 
@@ -53,9 +53,9 @@
 
 | 工具 |
 | --- |
-| [vimrc-get](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get) |
-| [vimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl) |
-| [nvimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl) |
+| [vimrc-get](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-get) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get)) |
+| [vimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)) |
+| [nvimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/nvimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)) |
 
 
 | Vimrc |

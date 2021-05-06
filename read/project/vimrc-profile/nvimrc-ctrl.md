@@ -9,6 +9,11 @@ grand_parent: 專案
 # nvimrc-ctrl
 
 
+## Link
+
+* [nvimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)
+
+
 ## Usage
 
 ### install

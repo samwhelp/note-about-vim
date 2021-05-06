@@ -2,7 +2,7 @@
 title: 移動邊界(更改大小)
 nav_order: 6021
 has_children: false
-parent: Window
+parent: 分割視窗
 grand_parent: 按鍵綁定
 ---
 
