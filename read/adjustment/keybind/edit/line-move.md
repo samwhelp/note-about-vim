@@ -35,11 +35,8 @@ inoremap <S-PageDown> <Esc>:m+<CR>i
 
 | 按鍵 | 對應 | 說明 | 注意事項 |
 | --- | --- | --- | --- |
-| `<S-PageUp>` | [:m-2](https://vimhelp.org/change.txt.html#:m)&lt;CR&gt; | Move line up. | Work on Normal Mode and Insert Mode |
-| `<S-PageDown>` | [:m+](https://vimhelp.org/change.txt.html#:m)&lt;CR&gt; | Move line Down. | Work on Normal Mode and Insert Mode |
-
-> 關於「S」，指的是「Shift」
-
+| `Shift + PageUp` | [:m-2](https://vimhelp.org/change.txt.html#:m)&lt;CR&gt; | Move line up. | Work on Normal Mode and Insert Mode |
+| `Shift + PageDown` | [:m+](https://vimhelp.org/change.txt.html#:m)&lt;CR&gt; | Move line Down. | Work on Normal Mode and Insert Mode |
 
 
 ## 範例

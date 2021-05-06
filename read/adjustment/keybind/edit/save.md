@@ -23,7 +23,7 @@ inoremap <S-Tab> <Esc>:w<CR>a
 
 | 按鍵 | 對應 | 說明 | 注意事項 |
 | --- | --- | --- | --- |
-| `<S-Tab>` | [:w](https://vimhelp.org/editing.txt.html#:w)&lt;CR&gt; | Write the whole buffer to the current file. | Work on Normal Mode and Insert Mode |
+| `Shift + Tab` | [:w](https://vimhelp.org/editing.txt.html#:w)&lt;CR&gt; | Write the whole buffer to the current file. | Work on Normal Mode and Insert Mode |
 
 
 ## 範例
