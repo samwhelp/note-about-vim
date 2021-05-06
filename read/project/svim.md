@@ -12,6 +12,7 @@ parent: 專案
 
 * [svim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/svim)
 
+
 ## Project
 
 * [tool-svim](https://github.com/samwhelp/tool-svim)
@@ -20,4 +21,12 @@ parent: 專案
 * [tool-svim-colorfit](https://github.com/samwhelp/tool-svim-colorfit)
 * [tool-svim-gen](https://github.com/samwhelp/tool-svim-gen)
 * [tool-svim-doc](https://github.com/samwhelp/tool-svim-doc)
-* [tool-svim-ctrl](https://github.com/samwhelp/tool-svim-ctrl)
+
+
+## Installer
+
+* [vimrc-get](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get)
+
+``` sh
+$ vimrc-get svim
+```
