@@ -1,21 +1,15 @@
 ---
-title: vimrc-profile
-nav_order: 8000
+title: vimrc-ctrl
+nav_order: 8011
 has_children: false
-parent: 專案
+parent: vimrc-profile
+grand_parent: 專案
 ---
 
-# vimrc-profile
-
-
-## Link
-
-* [vimrc-profile](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile)
+# vimrc-ctrl
 
 
 ## Usage
-
-> for vimrc-ctrl or nvimrc-ctrl
 
 ### install
 
