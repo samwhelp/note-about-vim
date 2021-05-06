@@ -16,6 +16,7 @@ parent: 專案
 ## Project
 
 * [tool-lvim](https://github.com/samwhelp/tool-lvim)
+* [tool-lvim-gen](https://github.com/samwhelp/tool-lvim-gen)
 
 
 ## Installer
