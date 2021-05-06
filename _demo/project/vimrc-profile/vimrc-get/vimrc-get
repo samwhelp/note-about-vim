@@ -460,6 +460,7 @@ svim_install () {
 	svim_bin_install
 	svim_app_install
 	svim_vim_plug_prepare
+	svim_vim_plug_install
 	echo
 }
 
@@ -506,6 +507,11 @@ svim_app_install () {
 svim_vim_plug_prepare () {
 	echo "curl -fLo $HOME/.cache/svim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 	curl -fLo "$HOME/.cache/svim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
+svim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/svim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/svim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 ##
@@ -581,6 +587,8 @@ mvim_install () {
 	mvim_repo_clone 'mvim' 'https://github.com/samwhelp/tool-mvim.git'
 	mvim_bin_install
 	mvim_app_install
+	mvim_vim_plug_prepare
+	mvim_vim_plug_install
 	echo
 }
 
@@ -629,6 +637,11 @@ mvim_vim_plug_prepare () {
 	curl -fLo "$HOME/.cache/mvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 }
 
+mvim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/mvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/mvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+}
+
 ##
 ### Tail: Model mvim_install
 ################################################################################
@@ -645,6 +658,7 @@ lvim_install () {
 	lvim_bin_install
 	lvim_app_install
 	lvim_vim_plug_prepare
+	lvim_vim_plug_install
 	echo
 }
 
@@ -693,6 +707,11 @@ lvim_vim_plug_prepare () {
 	curl -fLo "$HOME/.cache/lvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 }
 
+lvim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/lvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/lvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+}
+
 ##
 ### Tail: Model lvim_install
 ################################################################################
@@ -709,6 +728,7 @@ hvim_install () {
 	hvim_bin_install
 	hvim_app_install
 	hvim_vim_plug_prepare
+	hvim_vim_plug_install
 	echo
 }
 
@@ -755,6 +775,12 @@ hvim_app_install () {
 hvim_vim_plug_prepare () {
 	echo "curl -fLo $HOME/.cache/hvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 	curl -fLo "$HOME/.cache/hvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
+
+hvim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/hvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/hvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 ##

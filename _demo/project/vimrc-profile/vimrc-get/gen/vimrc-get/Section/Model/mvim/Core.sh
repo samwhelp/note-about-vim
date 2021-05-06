@@ -10,6 +10,8 @@ mvim_install () {
 	mvim_repo_clone 'mvim' 'https://github.com/samwhelp/tool-mvim.git'
 	mvim_bin_install
 	mvim_app_install
+	mvim_vim_plug_prepare
+	mvim_vim_plug_install
 	echo
 }
 
@@ -56,6 +58,11 @@ mvim_app_install () {
 mvim_vim_plug_prepare () {
 	echo "curl -fLo $HOME/.cache/mvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 	curl -fLo "$HOME/.cache/mvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
+mvim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/mvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/mvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 ##

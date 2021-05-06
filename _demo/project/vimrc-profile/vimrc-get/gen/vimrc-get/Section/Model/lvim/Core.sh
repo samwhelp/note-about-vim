@@ -11,6 +11,7 @@ lvim_install () {
 	lvim_bin_install
 	lvim_app_install
 	lvim_vim_plug_prepare
+	lvim_vim_plug_install
 	echo
 }
 
@@ -57,6 +58,11 @@ lvim_app_install () {
 lvim_vim_plug_prepare () {
 	echo "curl -fLo $HOME/.cache/lvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 	curl -fLo "$HOME/.cache/lvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
+lvim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/lvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/lvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 ##

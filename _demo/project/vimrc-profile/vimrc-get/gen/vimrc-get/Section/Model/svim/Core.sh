@@ -11,6 +11,7 @@ svim_install () {
 	svim_bin_install
 	svim_app_install
 	svim_vim_plug_prepare
+	svim_vim_plug_install
 	echo
 }
 
@@ -57,6 +58,11 @@ svim_app_install () {
 svim_vim_plug_prepare () {
 	echo "curl -fLo $HOME/.cache/svim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 	curl -fLo "$HOME/.cache/svim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+}
+
+svim_vim_plug_install () {
+	echo "vim -nNRe -u $HOME/.vimrc-profile/svim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$HOME/.vimrc-profile/svim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 ##
