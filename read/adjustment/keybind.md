@@ -30,7 +30,7 @@ has_children: true
 
 | notation | meaning |
 | --- | --- |
-| `<S-...>` | hift-key |
+| `<S-...>` | shift-key |
 | `<C-...>` | control-key |
 | `<M-...>` | alt-key or meta-key |
 | `<A-...>` | same as `<M-...>` |
