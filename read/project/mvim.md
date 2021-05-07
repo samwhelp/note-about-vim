@@ -17,7 +17,7 @@ parent: 專案
 
 * [tool-mvim](https://github.com/samwhelp/tool-mvim)
 * [tool-mvim-gen](https://github.com/samwhelp/tool-mvim-gen)
-* [tool-mvim-doc](https://samwhelp.github.io/tool-mvim-doc)
+* [tool-mvim-doc](https://github.com/samwhelp/tool-mvim-doc) ([首頁](https://samwhelp.github.io/tool-mvim-doc))
 
 
 ## Installer

@@ -16,6 +16,7 @@ parent: 專案
 ## Project
 
 * [tool-hvim](https://github.com/samwhelp/tool-hvim)
+* [tool-hvim-doc](https://github.com/samwhelp/tool-hvim-doc) ([首頁](https://samwhelp.github.io/tool-hvim-doc))
 
 
 ## Installer
