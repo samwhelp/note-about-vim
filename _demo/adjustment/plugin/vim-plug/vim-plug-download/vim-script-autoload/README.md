@@ -31,3 +31,10 @@ vim -u vimrc
 ``` sh
 nvim -u vimrc
 ```
+
+## Path
+
+| Path | Note |
+| --- | --- |
+| ~/.cache/xvim/site/autoload/plug.vim | plug.vim file path |
+| ~/.cache/xvim/plug | plug dir path |

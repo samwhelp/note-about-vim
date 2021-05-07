@@ -30,6 +30,14 @@ parent: Plugin
 * vim-plug / vim-plug-download / [vim-script-autoload](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/vim-plug-download/vim-script-autoload)
 
 
+## Path
+
+| Path | Note |
+| --- | --- |
+| ~/.cache/xvim/site/autoload/plug.vim | plug.vim file path |
+| ~/.cache/xvim/plug | plug dir path |
+
+
 ## Tree
 
 執行
