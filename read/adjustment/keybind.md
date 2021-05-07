@@ -11,6 +11,7 @@ has_children: true
 ## Help
 
 * :help [:key-notation](https://neovim.io/doc/user/intro.html#key-notation)
+* :help [:key-notation](https://vimhelp.org/intro.txt.html#key-notation)
 
 
 ## 同等按鍵
