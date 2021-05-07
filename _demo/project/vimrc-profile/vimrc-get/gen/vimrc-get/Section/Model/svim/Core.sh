@@ -12,6 +12,7 @@ svim_install () {
 	svim_app_install
 	svim_vim_plug_prepare
 	svim_vim_plug_install
+	svim_cache_dir_prepare
 	echo
 }
 
@@ -63,6 +64,17 @@ svim_vim_plug_prepare () {
 svim_vim_plug_install () {
 	echo "vim -nNRe -u $HOME/.vimrc-profile/svim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
 	vim -nNRe -u "$HOME/.vimrc-profile/svim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+}
+
+svim_cache_dir_prepare () {
+	echo "mkdir -p $HOME/.cache/vimfiles/var/backup"
+	mkdir -p "$HOME/.cache/vimfiles/var/backup"
+
+	echo "mkdir -p $HOME/.cache/vimfiles/var/swap"
+	mkdir -p "$HOME/.cache/vimfiles/var/swap"
+
+	echo "mkdir -p $HOME/.cache/vimfiles/var/undo"
+	mkdir -p "$HOME/.cache/vimfiles/var/undo"
 }
 
 ##

@@ -10,6 +10,7 @@ ivim_install () {
 	ivim_repo_clone 'ivim' 'https://github.com/samwhelp/tool-ivim.git'
 	ivim_bin_install
 	ivim_app_install
+	ivim_cache_dir_prepare
 	echo
 }
 
@@ -51,6 +52,17 @@ ivim_bin_install () {
 ivim_app_install () {
 	echo "install -Dm 644 $HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/desktop/ivim.desktop $HOME/.local/share/applications/ivim.desktop"
 	install -Dm 644 "$HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/desktop/ivim.desktop" "$HOME/.local/share/applications/ivim.desktop"
+}
+
+ivim_cache_dir_prepare () {
+	echo "mkdir -p $HOME/.cache/vimfiles/var/backup"
+	mkdir -p "$HOME/.cache/vimfiles/var/backup"
+
+	echo "mkdir -p $HOME/.cache/vimfiles/var/swap"
+	mkdir -p "$HOME/.cache/vimfiles/var/swap"
+
+	echo "mkdir -p $HOME/.cache/vimfiles/var/undo"
+	mkdir -p "$HOME/.cache/vimfiles/var/undo"
 }
 
 ##
