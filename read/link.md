@@ -38,6 +38,7 @@ has_children: true
 
 ## Tool
 
+* [vimrc-get](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get)
 * [vimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)
 * [nvimrc-ctrl](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)
 
