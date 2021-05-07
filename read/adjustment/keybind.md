@@ -14,7 +14,7 @@ has_children: true
 * :help [:key-notation](https://vimhelp.org/intro.txt.html#key-notation)
 
 
-## 同等按鍵
+## 常用同等按鍵
 
 | notation | equivalent | meaning |
 | --- | --- |  |
