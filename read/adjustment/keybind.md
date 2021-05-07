@@ -18,11 +18,11 @@ has_children: true
 
 | notation | equivalent | meaning |
 | --- | --- |  |
-| <Tab> | CTRL-i | tab |
-| <BS> | CTRL-h | backspace |
-| <NL> | CTRL-j | linefeed |
-| <CR> | CTRL-M | carriage return |
-| <Esc> | CTRL-] | escape |
+| `<Tab>` | CTRL-i | tab |
+| `<BS>` | CTRL-h | backspace |
+| `<NL>` | CTRL-j | linefeed |
+| `<CR>` | CTRL-M | carriage return |
+| `<Esc>` | CTRL-] | escape |
 
 
 ## 組合鍵
@@ -30,8 +30,8 @@ has_children: true
 
 | notation | meaning |
 | --- | --- |
-<S-...> | hift-key |
-<C-...> | control-key |
-<M-...> | alt-key or meta-key |
-<A-...> | same as <M-...> |
-<D-...> | command-key (Macintosh only) |
+| `<S-...>` | hift-key |
+| `<C-...>` | control-key |
+| `<M-...>` | alt-key or meta-key |
+| `<A-...>` | same as `<M-...>` |
+| `<D-...>` | command-key (Macintosh only) |
