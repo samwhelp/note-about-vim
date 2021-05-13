@@ -20,13 +20,13 @@ inoremap <S-PageDown> <Esc>:m+<CR>i
 這個功能，是從下面兩篇文章看到的，我改成適合我的按鍵操作。
 
 * 凍仁的筆記 / [Vim: Move line(s) up or down](http://note.drx.tw/2014/01/vim-move-lines-up-or-down.html)
-* 高見龍 / [Vim的操作小技巧])(https://kaochenlong.com/2011/12/28/vim-tips/)
+* 高見龍 / [Vim的操作小技巧](https://kaochenlong.com/2011/12/28/vim-tips/)
 
 相關的設定請參考
 
 * :help [:m](https://vimhelp.org/change.txt.html#:m)
 * [https://github.com/samwhelp/tool-svim-core#line-move](https://github.com/samwhelp/tool-svim-core#line-move)
-* [https://samwhelp.github.io/tool-svim-doc/read/en_us/#/feature?id=line-move](https://samwhelp.github.io/tool-svim-doc/read/en_us/#/feature?id=line-move)
+* [https://samwhelp.github.io/tool-svim-doc/read/en_us/feature/keybind.html#line-move](https://samwhelp.github.io/tool-svim-doc/read/en_us/feature/keybind.html#line-move)
 
 
 
