@@ -1,7 +1,7 @@
 ---
 title: vim-plug
 nav_order: 7010
-has_children: true
+has_children: false
 parent: 擴充套件 
 ---
 
@@ -18,16 +18,16 @@ parent: 擴充套件
 
 ### Usage
 
-* vim-plug / [start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/start)
-* vim-plug / [begin-args](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/begin-args)
+* vim-plug / usage / [start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/start)
+* vim-plug / usage / [begin-args](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/begin-args)
 
 
 ### Init
 
 
-* vim-plug / vim-plug-download / [shell-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/vim-plug-download/shell-script)
-* vim-plug / vim-plug-download / [vim-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/vim-plug-download/vim-script)
-* vim-plug / vim-plug-download / [vim-script-autoload](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/usage/vim-plug/vim-plug-download/vim-script-autoload)
+* vim-plug / usage / vim-plug-download / [shell-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/vim-plug-download/shell-script)
+* vim-plug / usage / vim-plug-download / [vim-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/vim-plug-download/vim-script)
+* vim-plug / usage / vim-plug-download / [vim-script-autoload](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/usage/vim-plug/vim-plug-download/vim-script-autoload)
 
 
 ## Path

@@ -1,7 +1,7 @@
 ---
 title: package
 nav_order: 7020
-has_children: true
+has_children: false
 parent: 擴充套件 
 ---
 
@@ -9,6 +9,9 @@ parent: 擴充套件
 
 
 ## Help
+
+
+### vim
 
 * :help [packpath](https://vimhelp.org/options.txt.html#%27packpath%27)    
 * :help [packages](https://vimhelp.org/repeat.txt.html#packages)    
@@ -23,9 +26,9 @@ parent: 擴充套件
 ## 範例
 
 
-
 ### Theme 
 
+* package / theme / [dracula](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/dracula)
 
 
 ## 路徑
