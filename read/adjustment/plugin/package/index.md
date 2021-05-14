@@ -29,6 +29,7 @@ parent: 擴充套件
 ### Theme 
 
 * package / theme / [dracula](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/dracula)
+* package / theme / [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/monokai)
 
 
 ## 路徑
@@ -37,4 +38,5 @@ parent: 擴充套件
 | --- | --- |
 | ~/.cache/xvim/site/pack | package dir path |
 | ~/.cache/xvim/site/pack/themes/start/dracula | dracula dir path |
+| ~/.cache/xvim/site/pack/themes/start/monokai | dracula dir path |
 
