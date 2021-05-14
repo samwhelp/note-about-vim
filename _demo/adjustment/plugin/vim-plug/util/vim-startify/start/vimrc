@@ -18,9 +18,7 @@ call plug#begin('~/.cache/xvim/plug')
 
 
 	" ## https://github.com/mhinz/vim-startify
-
 	Plug 'mhinz/vim-startify'
-
 
 
 call plug#end()
