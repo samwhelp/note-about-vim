@@ -118,6 +118,12 @@ vim -u ./vimrc -c ':vsplit'
 ```
 
 
-## vim help
+## Help
 
-* $ vim -c ':help VertSplit' # [說明連結](https://vimhelp.org/syntax.txt.html#hl-VertSplit)
+| 指令 | 頁面 |
+| --- | --- |
+| `vim -c ':help VertSplit'` | [#read](https://vimhelp.org/syntax.txt.html#hl-VertSplit) |
+
+| 指令 | 頁面 |
+| --- | --- |
+| `nvim -c ':help VertSplit'` | [#read](https://neovim.io/doc/user/syntax.html#hl-VertSplit) |

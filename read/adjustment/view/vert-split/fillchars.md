@@ -97,10 +97,18 @@ vim -u 'NONE' -c 'set fillchars=vert:│, | :vsplit'
 ```
 
 
-## vim help
+## Help
 
-* $ vim -c ":help 'fillchars'" # [說明連結](https://vimhelp.org/options.txt.html#'fillchars')
-* $ vim -c ':help :vsplit' # [說明連結](https://vimhelp.org/windows.txt.html#:vsplit)
+| 指令 | 頁面 |
+| --- | --- |
+| `vim -c ":help 'fillchars'"` | [#read](https://vimhelp.org/options.txt.html#'fillchars') |
+| `vim -c ':help :vsplit'` | [#read](https://vimhelp.org/windows.txt.html#:vsplit) |
+
+
+| 指令 | 頁面 |
+| --- | --- |
+| `nvim -c ":help 'fillchars'"` | [#read](https://neovim.io/doc/user/options.html#'fillchars') |
+| `nvim -c ':help :vsplit'` | [#read](https://neovim.io/doc/user/windows.html#:vsplit) |
 
 
 ## 接下來

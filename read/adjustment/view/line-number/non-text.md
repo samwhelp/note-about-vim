@@ -111,7 +111,17 @@ vim -u 'NONE' -c 'hi NonText ctermfg=244 ctermbg=234 cterm=NONE'
 
 ## vim help
 
-* $ vim -c ':help NonText' # [說明連結](https://vimhelp.org/syntax.txt.html#hl-NonText)
-* $ vim -c ':help EndOfBuffer' # [說明連結](https://vimhelp.org/syntax.txt.html#hl-EndOfBuffer)
-* $ vim -c ":help 'highlight'" # [說明連結](https://vimhelp.org/options.txt.html#'highlight')
-* $ vim -c ":help 'hl'"  # [說明連結](https://vimhelp.org/options.txt.html#'hl')
+| 指令 | 頁面 |
+| --- | --- |
+| `vim -c ':help NonText'` | [#read](https://vimhelp.org/syntax.txt.html#hl-NonText) |
+| `vim -c ':help EndOfBuffer'` | [#read](https://vimhelp.org/syntax.txt.html#hl-EndOfBuffer) |
+| `vim -c ":help 'highlight'"` | [#read](https://vimhelp.org/options.txt.html#'highlight') |
+| `vim -c ":help 'hl'"` | [#read](https://vimhelp.org/options.txt.html#'hl') |
+
+
+| 指令 | 頁面 |
+| --- | --- |
+| `nvim -c ':help NonText'` | [#read](https://neovim.io/doc/user/syntax.html#hl-NonText) |
+| `nvim -c ':help EndOfBuffer'` | [#read](https://neovim.io/doc/user/syntax.html#hl-EndOfBuffer) |
+| `nvim -c ":help 'highlight'"` | [#read](https://neovim.io/doc/user/options.html#'highlight') |
+| `nvim -c ":help 'hl'"` | [#read](https://neovim.io/doc/user/options.html#'hl') |

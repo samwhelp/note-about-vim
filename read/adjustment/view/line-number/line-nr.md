@@ -112,5 +112,13 @@ vim -u 'NONE' -c 'hi LineNr ctermfg=32 ctermbg=NONE cterm=NONE | hi CursorLineNr
 
 ## vim help
 
-* $ vim -c ":help LineNr" # [說明連結](https://vimhelp.org/syntax.txt.html#hl-LineNr)
-* $ vim -c ":help CursorLineNr" # [說明連結](https://vimhelp.org/syntax.txt.html#hl-CursorLineNr)
+| 指令 | 頁面 |
+| --- | --- |
+| `vim -c ':help LineNr'` | [#read](https://vimhelp.org/syntax.txt.html#hl-LineNr) |
+| `vim -c ':help CursorLineNr'` | [#read](https://vimhelp.org/syntax.txt.html#hl-CursorLineNr) |
+
+
+| 指令 | 頁面 |
+| --- | --- |
+| `vim -c ':help LineNr'` | [#read](https://neovim.io/doc/user/syntax.html#hl-LineNr) |
+| `vim -c ':help CursorLineNr'` | [#read](https://neovim.io/doc/user/syntax.html#hl-CursorLineNr) |
