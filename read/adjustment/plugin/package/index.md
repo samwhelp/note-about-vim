@@ -2,7 +2,7 @@
 title: package
 nav_order: 7020
 has_children: true
-parent: Plugin
+parent: 擴充套件 
 ---
 
 # package 

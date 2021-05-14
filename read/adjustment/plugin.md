@@ -12,6 +12,10 @@ has_children: true
 
 * [vim-plug](plugin/vim-plug)
 
+## Package
+
+* [package](plugin/package)
+
 
 ## Article
 
