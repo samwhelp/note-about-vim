@@ -16,6 +16,7 @@ parent: 基本功
 | --- | --- |
 | `vim -c ':help initialization'` | [#read](https://vimhelp.org/starting.txt.html#initialization) |
 | `vim -c ':help startup'` | [#read](https://vimhelp.org/starting.txt.html#startup) |
+| `vim -c ':help startup-options'` | [#read](https://vimhelp.org/starting.txt.html#startup-options) |
 | `vim -c ':help -u'` | [#read](https://vimhelp.org/starting.txt.html#-u) |
 | `man vim` | [#read](http://manpages.ubuntu.com/manpages/bionic/en/man1/vim.1.html) |
 
@@ -26,6 +27,7 @@ parent: 基本功
 | --- | --- |
 | `nvim -c ':help initialization'` | [#read](https://neovim.io/doc/user/starting.html#initialization) |
 | `nvim -c ':help startup'` | [#read](https://neovim.io/doc/user/starting.html#startup) |
+| `nvim -c ':help startup-options'` | [#read](https://neovim.io/doc/user/starting.html#startup-options) |
 | `nvim -c ':help -u'` | [#read](https://neovim.io/doc/user/starting.html#-u) |
 | `man nvim` | [#read](http://manpages.ubuntu.com/manpages/focal/en/man1/nvim.1.html) |
 
