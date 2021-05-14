@@ -69,8 +69,8 @@ has_children: true
 
 | 指令 | 頁面 |
 | --- | --- |
-| `$ nvim -c ':help'` [#read](https://neovim.io/doc/user/) |
-| `$ nvim -c ':help initialization'` [#read](https://neovim.io/doc/user/starting.html#initialization) |
+| `$ nvim -c ':help'` | [#read](https://neovim.io/doc/user/) |
+| `$ nvim -c ':help initialization'` | [#read](https://neovim.io/doc/user/starting.html#initialization) |
 
 
 ## Just the Docs
