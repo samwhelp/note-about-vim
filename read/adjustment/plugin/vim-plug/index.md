@@ -12,6 +12,19 @@ parent: 擴充套件
 
 * [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 
+## Help
+
+
+### vim
+
+* :help [runtimepath](https://vimhelp.org/options.txt.html#'runtimepath')
+
+
+### nvim
+
+* :help [runtimepath](https://neovim.io/doc/user/options.html#'runtimepath')
+
+
 
 ## 範例
 
