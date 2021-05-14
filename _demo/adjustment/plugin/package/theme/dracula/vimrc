@@ -1,0 +1,23 @@
+set nocompatible
+
+scriptencoding utf-8
+
+
+""
+" ## Prepare
+" ```
+" mkdir -p ~/.cache/xvim/site/pack/themes/start
+" cd ~/.cache/xvim/site/pack/themes/start
+" git clone https://github.com/dracula/vim.git dracula
+" ```
+""
+
+let &packpath = '~/.cache/xvim/site' . ',' . &packpath
+
+packadd! dracula
+
+syntax enable
+
+set background=dark
+
+colorscheme dracula
