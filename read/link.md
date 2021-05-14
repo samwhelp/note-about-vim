@@ -60,13 +60,17 @@ has_children: true
 
 ### vim
 
-* `$ vim -c ':help'` [#read](https://vimhelp.org/)
-* `$ vim -c ':help initialization'` [#read](https://vimhelp.org/starting.txt.html#initialization)
+| 指令 | 頁面 |
+| --- | --- |
+| `$ vim -c ':help'` | [#read](https://vimhelp.org/) |
+| `$ vim -c ':help initialization'` | [#read](https://vimhelp.org/starting.txt.html#initialization) |
 
 ### nvim
 
-* `$ nvim -c ':help'` [#read](https://neovim.io/doc/user/)
-* `$ nvim -c ':help initialization'` [#read](https://neovim.io/doc/user/starting.html#initialization)
+| 指令 | 頁面 |
+| --- | --- |
+| `$ nvim -c ':help'` [#read](https://neovim.io/doc/user/) |
+| `$ nvim -c ':help initialization'` [#read](https://neovim.io/doc/user/starting.html#initialization) |
 
 
 ## Just the Docs
