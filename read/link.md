@@ -56,6 +56,19 @@ has_children: true
 * [Vim 插件管理器概覽](https://www.jianshu.com/p/780243c792cc)
 
 
+## Help
+
+### vim
+
+* vim -c ':[help](https://vimhelp.org/)'
+* vim -c ':help [initialization](https://vimhelp.org/starting.txt.html#initialization)'
+
+### nvim
+
+* nvim -c ':[help](https://neovim.io/doc/user/)'
+* nvim -c ':help [initialization](https://neovim.io/doc/user/starting.html#initialization)'
+
+
 ## Just the Docs
 
 * [Just the Docs](https://pmarsceill.github.io/just-the-docs/) ([GitHub](https://github.com/pmarsceill/just-the-docs))
