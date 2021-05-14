@@ -8,3 +8,4 @@ parent: 按鍵綁定
 # 編輯
 
 * [移動行](line-move.md)
+* [存檔](save.md)
