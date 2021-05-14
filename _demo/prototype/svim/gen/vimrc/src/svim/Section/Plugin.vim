@@ -1,7 +1,7 @@
 
-<?php include_once(__DIR__ . '/Plug/ThemeGruvbox/Plugin.vim'); ?>
-<?php include_once(__DIR__ . '/Plug/ThemeMonokai/Plugin.vim'); ?>
-<?php include_once(__DIR__ . '/Plug/ThemeOneDark/Plugin.vim'); ?>
-<?php include_once(__DIR__ . '/Plug/ThemeSpaceVim/Plugin.vim'); ?>
-<?php include_once(__DIR__ . '/Plug/ThemeSeoul256/Plugin.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Theme_Gruvbox/Plugin.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Theme_Monokai/Plugin.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Theme_OneDark/Plugin.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Theme_SpaceVim/Plugin.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Theme_Seoul256/Plugin.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Fcitx/Plugin.vim'); ?>
