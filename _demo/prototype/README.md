@@ -6,3 +6,4 @@
 * [svim](svim)
 * [mvim](mvim)
 * [hvim](hvim)
+* [pvim](pvim)
