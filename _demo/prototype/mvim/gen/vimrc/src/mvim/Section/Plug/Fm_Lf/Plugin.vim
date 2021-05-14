@@ -7,10 +7,13 @@
 	Plug 'ptzz/lf.vim'
 	"Plug 'rbgrouleff/bclose.vim'
 
-	if has('nvim')
-		Plug 'rbgrouleff/bclose.vim'
-		Plug 'voldikss/vim-floaterm'
-	endif
+	"if has('nvim')
+	"	Plug 'rbgrouleff/bclose.vim'
+	"	Plug 'voldikss/vim-floaterm'
+	"endif
+
+	Plug 'rbgrouleff/bclose.vim'
+	Plug 'voldikss/vim-floaterm'
 
 	" Notice
 	" Install lf first

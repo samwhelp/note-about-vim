@@ -16,12 +16,13 @@ set showcmd
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Wild Mode / Option
+""" Head: WildMenu / Option
 ""
 
 " ## wildmode
 set wildmenu
-set wildmode=longest:list,full
+"set wildmode=longest:list,full
+set wildmode=longest,full
 
 
 " ## ignore
@@ -29,7 +30,7 @@ set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
 set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
 
 ""
-""" Tail: Wild Mode / Option
+""" Tail: WildMenu / Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

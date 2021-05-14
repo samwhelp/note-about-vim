@@ -1,12 +1,12 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: FmLf / Keybind
+""" Head: Fm_Ranger / Keybind
 ""
 
-nnoremap <Space>el :Lf<CR>
-nnoremap ,f :Lf<CR>
+nnoremap <Space>er :Ranger<CR>
+"nnoremap ,f :Ranger<CR>
 
 ""
-""" Tail: FmLf / Keybind
+""" Tail: Fm_Ranger / Keybind
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

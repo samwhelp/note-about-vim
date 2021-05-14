@@ -5,9 +5,14 @@
 	" https://github.com/francoiscabrol/ranger.vim
 	Plug 'francoiscabrol/ranger.vim'
 
-	if has('nvim')
-		Plug 'rbgrouleff/bclose.vim'
-	endif
+	"if has('nvim')
+	"	Plug 'rbgrouleff/bclose.vim'
+	"	Plug 'voldikss/vim-floaterm'
+	"endif
+
+	Plug 'rbgrouleff/bclose.vim'
+	Plug 'voldikss/vim-floaterm'
+
 
 	" Notice
 	" Install ranger first
