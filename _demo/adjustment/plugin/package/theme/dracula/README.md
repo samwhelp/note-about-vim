@@ -10,7 +10,7 @@
 
 ### vim
 
-* :help [packpath](https://vimhelp.org/options.txt.html#%27packpath%27)
+* :help [packpath](https://vimhelp.org/options.txt.html#'packpath')
 * :help [packages](https://vimhelp.org/repeat.txt.html#packages)
 
 ### nvim
