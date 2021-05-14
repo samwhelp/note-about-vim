@@ -1,9 +1,9 @@
 
 
 """""""""""""""""""""""""""" Keybind """""""""""""""""""""""""""""""""""""""""""
-<?php include_once(__DIR__ . '/Plug/FmNerdTree/Keybind.vim'); ?>
-<?php include_once(__DIR__ . '/Plug/FmLf/Keybind.vim'); ?>
-<?php include_once(__DIR__ . '/Plug/FmRanger/Keybind.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Fm_NerdTree/Keybind.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Fm_Lf/Keybind.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Fm_Ranger/Keybind.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Fzf/Keybind.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Coc/Keybind.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/WhichKey/Keybind.vim'); ?>

@@ -1,12 +1,12 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: FmNerdTree / Keybind
+""" Head: Fm_NerdTree / Keybind
 ""
 
 nnoremap ,t :NERDTreeToggle<cr>
 
 
 ""
-""" Tail: FmNerdTree / Keybind
+""" Tail: Fm_NerdTree / Keybind
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

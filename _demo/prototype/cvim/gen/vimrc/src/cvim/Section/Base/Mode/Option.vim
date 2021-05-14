@@ -16,7 +16,7 @@ set showcmd
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Wild Menu / Option
+""" Head: WildMenu / Option
 ""
 
 " ## wildmode
@@ -30,7 +30,7 @@ set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
 set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
 
 ""
-""" Tail: Wild Menu / Option
+""" Tail: WildMenu / Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

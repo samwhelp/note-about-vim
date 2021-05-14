@@ -1,12 +1,12 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: FmNerdTree / Keybind
+""" Head: Fm_Lf / Keybind
 ""
 
-nnoremap ,t :NERDTreeToggle<cr>
-
+nnoremap <Space>el :Lf<CR>
+nnoremap ,f :Lf<CR>
 
 ""
-""" Tail: FmNerdTree / Keybind
+""" Tail: Fm_Lf / Keybind
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
