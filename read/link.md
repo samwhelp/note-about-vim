@@ -1,6 +1,6 @@
 ---
 title: 連結
-nav_order: 99
+nav_order: 9000
 has_children: true
 ---
 
