@@ -19,7 +19,7 @@ call plug#begin('~/.cache/xvim/plug')
 
 	"https://draculatheme.com/vim
 	"https://github.com/dracula/vim
-	Plug 'dracula/vim'
+	Plug 'dracula/vim', { 'as': 'dracula' }
 
 
 
