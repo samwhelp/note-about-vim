@@ -12,6 +12,7 @@ scriptencoding utf-8
 ""
 
 let &runtimepath = '~/.cache/xvim/site' . ',' . &runtimepath
+"set packpath+=~/.cache/xvim/site
 
 call plug#begin('~/.cache/xvim/plug')
 

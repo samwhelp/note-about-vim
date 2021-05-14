@@ -25,8 +25,8 @@
 run
 
 ``` sh
-mkdir -p ~/.cache/xvim/site/pack/themes/start
-cd ~/.cache/xvim/site/pack/themes/start
+mkdir -p ~/.cache/xvim/site/pack/theme/start
+cd ~/.cache/xvim/site/pack/theme/start
 git clone https://github.com/sickill/vim-monokai.git monokai
 ```
 
@@ -53,4 +53,4 @@ nvim -u vimrc
 | Path | Note |
 | --- | --- |
 | ~/.cache/xvim/site/pack | package dir path |
-| ~/.cache/xvim/site/pack/themes/start/monokai | monokai dir path |
+| ~/.cache/xvim/site/pack/theme/start/monokai | monokai dir path |

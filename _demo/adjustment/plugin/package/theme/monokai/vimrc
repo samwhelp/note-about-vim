@@ -6,13 +6,14 @@ scriptencoding utf-8
 ""
 " ## Prepare
 " ```
-" mkdir -p ~/.cache/xvim/site/pack/themes/start
-" cd ~/.cache/xvim/site/pack/themes/start
+" mkdir -p ~/.cache/xvim/site/pack/theme/start
+" cd ~/.cache/xvim/site/pack/theme/start
 " git clone https://github.com/sickill/vim-monokai.git monokai
 " ```
 ""
 
 let &packpath = '~/.cache/xvim/site' . ',' . &packpath
+"set packpath+=~/.cache/xvim/site
 
 packadd! monokai
 
