@@ -62,15 +62,15 @@ has_children: true
 
 | 指令 | 頁面 |
 | --- | --- |
-| `$ vim -c ':help'` | [#read](https://vimhelp.org/) |
-| `$ vim -c ':help initialization'` | [#read](https://vimhelp.org/starting.txt.html#initialization) |
+| `vim -c ':help'` | [#read](https://vimhelp.org/) |
+| `vim -c ':help initialization'` | [#read](https://vimhelp.org/starting.txt.html#initialization) |
 
 ### nvim
 
 | 指令 | 頁面 |
 | --- | --- |
-| `$ nvim -c ':help'` | [#read](https://neovim.io/doc/user/) |
-| `$ nvim -c ':help initialization'` | [#read](https://neovim.io/doc/user/starting.html#initialization) |
+| `nvim -c ':help'` | [#read](https://neovim.io/doc/user/) |
+| `nvim -c ':help initialization'` | [#read](https://neovim.io/doc/user/starting.html#initialization) |
 
 
 ## Just the Docs

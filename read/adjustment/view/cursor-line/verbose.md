@@ -50,7 +50,18 @@ CursorColumn   xxx term=reverse ctermbg=7 guibg=Grey90
 
 可以閱讀下面的「vim help」。
 
-* $ vim -c ':help [initialization](https://vimhelp.org/starting.txt.html#initialization)'
-* $ vim -c ':help [startup](https://vimhelp.org/starting.txt.html#startup)'
-* $ vim -c ':help [-u](https://vimhelp.org/starting.txt.html#-u)'
-* $ man [vim](http://manpages.ubuntu.com/manpages/bionic/en/man1/vim.1.html)
+
+| 指令 | 頁面 |
+| --- | --- |
+| `vim -c ':help initialization'` | [#read](https://vimhelp.org/starting.txt.html#initialization) |
+| `vim -c ':help startup'` | [#read](https://vimhelp.org/starting.txt.html#startup) |
+| `vim -c ':help -u'` | [#read](https://vimhelp.org/starting.txt.html#-u) |
+| `man vim` | [#read](http://manpages.ubuntu.com/manpages/bionic/en/man1/vim.1.html) |
+
+
+| 指令 | 頁面 |
+| --- | --- |
+| `nvim -c ':help initialization'` | [#read](https://neovim.io/doc/user/starting.html#initialization) |
+| `nvim -c ':help startup'` | [#read](https://neovim.io/doc/user/starting.html#startup) |
+| `nvim -c ':help -u'` | [#read](https://neovim.io/doc/user/starting.html#-u) |
+| `man nvim` | [#read](http://manpages.ubuntu.com/manpages/focal/en/man1/nvim.1.html) |
