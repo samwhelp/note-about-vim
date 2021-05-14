@@ -1,4 +1,33 @@
 
+## Prepare
+
+``` sh
+make prepare
+```
+
+## Test
+
+
+### vim
+
+
+``` sh
+vim -u vimrc
+```
+
+### neovim
+
+``` sh
+nvim -u vimrc
+```
+
+## Path
+
+| Path | Note |
+| --- | --- |
+| ~/.cache/pvim/site/pack | package dir path |
+| ~/.cache/pvim/site/pack/theme/start | theme dir path |
+| ~/.cache/pvim/site/pack/util/start | util dir path |
 
 ## Note
 
