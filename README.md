@@ -47,6 +47,7 @@
 | 議題 |
 | --- |
 | [vim-plug](https://samwhelp.github.io/note-about-vim/read/adjustment/plugin/vim-plug/) |
+| [package](https://samwhelp.github.io/note-about-vim/read/adjustment/plugin/package/) |
 
 
 ### 專案
