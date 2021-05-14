@@ -11,12 +11,16 @@ help:
 	@echo
 	@echo '	$$ make prepare'
 	@echo
-	@echo '	$$ make pluginstall'
-	@echo
 	@echo '	$$ make sync'
 	@echo
 
 .PHONY: help
+
+
+prepare:
+
+.PHONY: prepare
+
 
 
 sync:
