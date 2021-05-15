@@ -45,6 +45,7 @@ pvim_package_prepare () {
 	pvim_package_prepare_util_fzf
 	pvim_package_prepare_util_fzf_bin
 	pvim_package_prepare_util_coc
+	pvim_package_prepare_util_better_whitespace
 
 	echo
 }
@@ -291,6 +292,19 @@ pvim_package_prepare_util_coc () {
 
 }
 
+pvim_package_prepare_util_better_whitespace () {
+
+	if [ -a "$THE_CACHE_UTIL_START_DIR_PATH/better_whitespace" ]; then
+		echo "### Is Exists: $THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
+		return 0
+	fi
+
+	echo "git clone https://github.com/Ntpeters/vim-better-whitespace $THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
+
+	git clone 'https://github.com/Ntpeters/vim-better-whitespace' "$THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
+
+
+}
 
 
 ##
