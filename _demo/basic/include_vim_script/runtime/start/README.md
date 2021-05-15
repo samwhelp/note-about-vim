@@ -7,12 +7,14 @@
 ### vim
 
 * :help [using-scripts](https://vimhelp.org/repeat.txt.html#using-scripts)
+* :help [script](https://vimhelp.org/usr_41.txt.html#script)
 * :help ['runtimepath'](https://vimhelp.org/options.txt.html#'runtimepath')
 * :help [:runtime](https://vimhelp.org/repeat.txt.html#:runtime)
 
 ### nvim
 
 * :help [using-scripts](https://neovim.io/doc/user/repeat.html#using-scripts)
+* :help [script](https://neovim.io/doc/user/usr_41.html#script)
 * :help ['runtimepath'](https://neovim.io/doc/user/options.html#'runtimepath')
 * :help [:runtime](https://neovim.io/doc/user/repeat.html#:runtime)
 
