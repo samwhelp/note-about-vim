@@ -2,10 +2,10 @@
 title: package
 nav_order: 7020
 has_children: false
-parent: 擴充套件 
+parent: 擴充套件
 ---
 
-# package 
+# package
 
 
 ## Help
@@ -25,16 +25,22 @@ parent: 擴充套件
 
 ## 範例
 
+### Theme
 
-### Theme 
+| 範例 | 說明 |
+| --- | --- |
+| [dracula](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/dracula) | |
+| [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/monokai) | |
 
-* package / theme / [dracula](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/dracula)
-* package / theme / [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/monokai)
 
+### 實做
 
-### Prototype
+| 範例 | 說明 |
+| --- | --- |
+| [pvim](https://samwhelp.github.io/note-about-vim/read/project/pvim.html) | |
+| [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/monokai) | |
 
-* [pvim](https://samwhelp.github.io/note-about-vim/read/project/pvim.html)
+*
 
 
 ## 路徑
@@ -44,4 +50,3 @@ parent: 擴充套件
 | ~/.cache/xvim/site/pack | package dir path |
 | ~/.cache/xvim/site/pack/themes/start/dracula | dracula dir path |
 | ~/.cache/xvim/site/pack/themes/start/monokai | monokai dir path |
-
