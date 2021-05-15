@@ -1,3 +1,3 @@
 
-	" ## https://github.com/Ntpeters/vim-better-whitespace
-	packadd! better_whitespace
+" ## https://github.com/ntpeters/vim-better-whitespace
+packadd! better_whitespace

@@ -299,9 +299,9 @@ pvim_package_prepare_util_better_whitespace () {
 		return 0
 	fi
 
-	echo "git clone https://github.com/Ntpeters/vim-better-whitespace $THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
+	echo "git clone https://github.com/ntpeters/vim-better-whitespace $THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
 
-	git clone 'https://github.com/Ntpeters/vim-better-whitespace' "$THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
+	git clone 'https://github.com/ntpeters/vim-better-whitespace' "$THE_CACHE_UTIL_START_DIR_PATH/better_whitespace"
 
 
 }
