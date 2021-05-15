@@ -4,3 +4,4 @@
 <?php include_once(__DIR__ . '/mvim/Action.sh'); ?>
 <?php include_once(__DIR__ . '/lvim/Action.sh'); ?>
 <?php include_once(__DIR__ . '/hvim/Action.sh'); ?>
+<?php include_once(__DIR__ . '/cvim/Action.sh'); ?>

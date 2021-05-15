@@ -5,3 +5,4 @@
 <?php include_once(__DIR__ . '/Section/Model/mvim/Core.sh'); ?>
 <?php include_once(__DIR__ . '/Section/Model/lvim/Core.sh'); ?>
 <?php include_once(__DIR__ . '/Section/Model/hvim/Core.sh'); ?>
+<?php include_once(__DIR__ . '/Section/Model/cvim/Core.sh'); ?>

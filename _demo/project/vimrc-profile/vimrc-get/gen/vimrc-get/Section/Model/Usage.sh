@@ -4,3 +4,4 @@
 <?php include_once(__DIR__ . '/mvim/Usage.sh'); ?>
 <?php include_once(__DIR__ . '/lvim/Usage.sh'); ?>
 <?php include_once(__DIR__ . '/hvim/Usage.sh'); ?>
+<?php include_once(__DIR__ . '/cvim/Usage.sh'); ?>
