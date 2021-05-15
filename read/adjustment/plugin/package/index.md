@@ -38,9 +38,6 @@ parent: 擴充套件
 | 範例 | 說明 |
 | --- | --- |
 | [pvim](https://samwhelp.github.io/note-about-vim/read/project/pvim.html) | |
-| [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/monokai) | |
-
-*
 
 
 ## 路徑
