@@ -2,7 +2,7 @@
 title: vim-plug
 nav_order: 7010
 has_children: false
-parent: 擴充套件 
+parent: 擴充套件
 ---
 
 # vim-plug
@@ -41,6 +41,33 @@ parent: 擴充套件
 * vim-plug / usage / vim-plug-download / [shell-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/vim-plug-download/shell-script)
 * vim-plug / usage / vim-plug-download / [vim-script](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/usage/vim-plug-download/vim-script)
 * vim-plug / usage / vim-plug-download / [vim-script-autoload](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/usage/vim-plug/vim-plug-download/vim-script-autoload)
+
+
+### Theme
+
+| 範例 | 說明 |
+| --- | --- |
+| [dracula](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/theme/dracula) | |
+| [gruvbox](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/theme/gruvbox) | |
+| [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/theme/monokai) | |
+| [onedark](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/theme/onedark) | |
+| [seoul256](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/theme/seoul256) | |
+| [space-vim-theme](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/theme/space-vim-theme) | |
+
+### Util
+
+| 範例 | 說明 |
+| --- | --- |
+| [vim-better-whitespace](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/util/vim-better-whitespace/start) | |
+| [vim-startify](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/util/vim-startify/start) | |
+
+
+| 範例 | 說明 |
+| --- | --- |
+| vim-clap / [start](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/util/vim-clap/start) | |
+| vim-clap / [suite](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/util/vim-clap/suite) | |
+| vim-clap / [theme-material_design_dark](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/vim-plug/util/vim-clap/theme-material_design_dark) | |
+
 
 
 ## Path
