@@ -1,0 +1,5 @@
+
+let &runtimepath = '.' . ',' . &runtimepath
+
+source boot/Start.vim
+
