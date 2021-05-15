@@ -92,6 +92,9 @@ call plug#begin('~/.cache/cvim/plug')
 	" Install ranger first
 	" $ sudo apt-get install ranger
 
+	" ## https://github.com/Ntpeters/vim-better-whitespace
+	Plug 'Ntpeters/vim-better-whitespace'
+
 	" ## vim-clap
 	" https://github.com/liuchengxu/vim-clap
 	Plug 'liuchengxu/vim-clap', { 'do': { -> clap#installer#force_download() } }
@@ -244,6 +247,19 @@ set ttimeoutlen=100
 
 ""
 """ Tail: Fcitx / Option
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Edit_BetterWhitespace / Option
+""
+
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+let g:strip_whitespace_confirm=0
+
+""
+""" Tail: Edit_BetterWhitespace / Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

@@ -9,6 +9,7 @@
 <?php include_once(__DIR__ . '/Plug/Fm_NerdTree/Plugin.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Fm_Lf/Plugin.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Fm_Ranger/Plugin.vim'); ?>
+<?php include_once(__DIR__ . '/Plug/Edit_BetterWhitespace/Plugin.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Clap/Plugin.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Coc/Plugin.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/WhichKey/Plugin.vim'); ?>
