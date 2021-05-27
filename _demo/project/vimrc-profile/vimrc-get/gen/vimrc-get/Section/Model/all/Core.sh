@@ -10,6 +10,7 @@ all_install () {
 	mvim_install
 	lvim_install
 	hvim_install
+	cvim_install
 }
 
 
