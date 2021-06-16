@@ -189,6 +189,31 @@ base_var_dump
 
 
 ################################################################################
+### Head: Util_Command
+##
+
+is_function_exist () {
+	if type -p "$1" > /dev/null; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+is_command_exist () {
+	if command -v "$1" > /dev/null; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+##
+### Tail: Util_Command
+################################################################################
+
+
+################################################################################
 ### Head: Util_SubCmd
 ##
 
@@ -427,6 +452,46 @@ vimrc_check_vimrc_file_exists () {
 
 ##
 ### Tail: Sys
+################################################################################
+
+
+################################################################################
+### Head: Model fzf
+##
+
+mod_fzf () {
+	#echo "mod_fzf"
+	#echo "$@"
+
+if ! is_command_exist 'fzf'; then
+
+cat << EOF
+
+## Need: fzf
+
+	* https://github.com/junegunn/fzf
+
+	$ pamac install fzf
+
+EOF
+	return 1
+fi
+
+
+local selected=$(vimrc_profile_list | fzf)
+
+
+echo
+echo "## Selected: $selected"
+echo
+
+vimrc_profile_set "$selected"
+
+
+}
+
+##
+### Tail: Model fzf
 ################################################################################
 
 
@@ -685,6 +750,12 @@ sub_run_self_actions () {
 
 
 
+sub_run_fzf () {
+	#echo "sub_run_fzf"
+	mod_fzf "$@"
+}
+
+
 sub_run_default () {
 	#echo "sub_run_default"
 	vimrc_profile_default
@@ -756,8 +827,11 @@ Example:
 
 		$ $cmd_name self_actions
 
-	## profile
+	## fzf
 
+		$ $cmd_name fzf
+
+	## profile
 
 		$ $cmd_name default
 
