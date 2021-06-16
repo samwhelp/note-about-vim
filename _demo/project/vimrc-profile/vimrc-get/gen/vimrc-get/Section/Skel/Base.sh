@@ -165,6 +165,31 @@ base_var_dump
 
 
 ################################################################################
+### Head: Util_Command
+##
+
+is_function_exist () {
+	if type -p "$1" > /dev/null; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+is_command_exist () {
+	if command -v "$1" > /dev/null; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+##
+### Tail: Util_Command
+################################################################################
+
+
+################################################################################
 ### Head: Util_SubCmd
 ##
 

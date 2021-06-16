@@ -1,3 +1,4 @@
+<?php include_once(__DIR__ . '/fzf/Action.sh'); ?>
 <?php include_once(__DIR__ . '/all/Action.sh'); ?>
 <?php include_once(__DIR__ . '/svim/Action.sh'); ?>
 <?php include_once(__DIR__ . '/ivim/Action.sh'); ?>
