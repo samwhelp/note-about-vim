@@ -1,4 +1,5 @@
 <?php include_once(__DIR__ . '/Section/Sys/Nvimrc.sh'); ?>
+<?php include_once(__DIR__ . '/Section/Model/fzf/Core.sh'); ?>
 <?php include_once(__DIR__ . '/Section/Model/default/Core.sh'); ?>
 <?php include_once(__DIR__ . '/Section/Model/list/Core.sh'); ?>
 <?php include_once(__DIR__ . '/Section/Model/get/Core.sh'); ?>

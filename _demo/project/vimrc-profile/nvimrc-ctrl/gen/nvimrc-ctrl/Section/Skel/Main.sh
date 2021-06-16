@@ -31,8 +31,10 @@ Example:
 
 		$ $cmd_name self_actions
 
-	## profile
+	## fzf
+<?php include_once(dirname(__DIR__) . '/Model/fzf/Usage.sh'); ?>
 
+	## profile
 <?php include_once(dirname(__DIR__) . '/Model/Usage.sh'); ?>
 
 
