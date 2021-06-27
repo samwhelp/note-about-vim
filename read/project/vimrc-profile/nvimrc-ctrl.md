@@ -62,3 +62,9 @@ demo
 ``` sh
 nvimrc-ctrl remove demo
 ```
+
+### fzf
+
+``` sh
+nvimrc-ctrl fzf
+```

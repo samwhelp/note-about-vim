@@ -62,3 +62,9 @@ demo
 ``` sh
 vimrc-ctrl remove demo
 ```
+
+### fzf
+
+``` sh
+vimrc-ctrl fzf
+```

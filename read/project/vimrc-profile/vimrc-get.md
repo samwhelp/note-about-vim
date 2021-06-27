@@ -51,3 +51,9 @@ vimrc-get ivim
 ``` sh
 vimrc-get all
 ```
+
+### fzf
+
+``` sh
+vimrc-get fzf
+```
