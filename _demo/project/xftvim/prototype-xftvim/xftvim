@@ -4,7 +4,7 @@ _xftvim () {
     local file_path="$1"
 	local file_name="$(basename $file_path)"
 	local dir_name="$(dirname $file_path)"
-	cd "$dir_name"
+	##cd "$dir_name"
     xfce4-terminal --tab --command="vi $file_path" --title="$file_name" --working-directory="$dir_name" --default-working-directory="$dir_name"
 }
 
