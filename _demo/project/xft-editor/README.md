@@ -5,4 +5,4 @@
 | --- |
 | [xftvim](prototype-xftvim) |
 | [xftmicro](prototype-xftmicro) |
-| [xftkak](prototpe-xftkak) |
+| [xftkak](prototype-xftkak) |
