@@ -14,4 +14,7 @@ parent: 專案
 
 ## 工具
 
-* [xftvim](xftvim)
+| 工具 |
+| --- |
+| [xftvim](xftvim) |
+| [xftmicro](xftmicro) |
