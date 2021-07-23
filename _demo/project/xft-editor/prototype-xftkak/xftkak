@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-_xftmicro () {
+_xftkak () {
 
 	local file_path="$1"
 	local file_name="$(basename $file_path)"
@@ -13,8 +13,8 @@ _xftmicro () {
 	fi
 
 	##cd "$dir_path"
-	xfce4-terminal --tab --command="micro $file_path" --title="$file_name" --working-directory="$dir_path" --default-working-directory="$dir_path"
+	xfce4-terminal --tab --command="kak $file_path" --title="$file_name" --working-directory="$dir_path" --default-working-directory="$dir_path"
 
 }
 
-_xftmicro "$@"
+_xftkak "$@"
