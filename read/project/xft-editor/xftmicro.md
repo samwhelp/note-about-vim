@@ -11,7 +11,7 @@ grand_parent: 專案
 
 ## 專案連結 
 
-* [prototype-xftmicro](https://github.com/samwhelp/note-about-micro/tree/gh-pages/_demo/project/xft-editor/prototype-xftmicro)
+* [prototype-xftmicro](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftmicro)
 
 
 ## 使用說明

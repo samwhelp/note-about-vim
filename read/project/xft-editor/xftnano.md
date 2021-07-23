@@ -11,7 +11,7 @@ grand_parent: 專案
 
 ## 專案連結 
 
-* [prototype-xftnano](https://github.com/samwhelp/note-about-nano/tree/gh-pages/_demo/project/xft-editor/prototype-xftnano)
+* [prototype-xftnano](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftnano)
 
 
 ## 使用說明
