@@ -1,16 +1,17 @@
 ---
 title: xftvim
-nav_order: 8001
+nav_order: 8011
 has_children: false
-parent: 專案
+parent: xft-editor
+grand_parent: 專案
 ---
 
 # xftvim
 
 
-## 專案連結
+## 專案連結 
 
-* [xftvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xftvim/)
+* [prototype-xftvim](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftvim)
 
 
 ## 使用說明
