@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-_xftkak () {
+_xftnano () {
 
 	local file_path="$1"
 	local file_name="$(basename $file_path)"
@@ -13,8 +13,8 @@ _xftkak () {
 	fi
 
 	##cd "$dir_path"
-	xfce4-terminal --tab --command="kak $file_path" --title="$file_name" --working-directory="$dir_path" --default-working-directory="$dir_path"
+	xfce4-terminal --tab --command="nano $file_path" --title="$file_name" --working-directory="$dir_path" --default-working-directory="$dir_path"
 
 }
 
-_xftkak "$@"
+_xftnano "$@"

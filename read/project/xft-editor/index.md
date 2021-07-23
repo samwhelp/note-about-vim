@@ -19,3 +19,4 @@ parent: 專案
 | [xftvim](xftvim) |
 | [xftmicro](xftmicro) |
 | [xftkak](xftkak) |
+| [xftnano](xftnano) |
