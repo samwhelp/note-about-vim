@@ -3,9 +3,14 @@
 _xftvim () {
     local file_path="$1"
 	local file_name="$(basename $file_path)"
-	local dir_name="$(dirname $file_path)"
-	##cd "$dir_name"
-    xfce4-terminal --tab --command="vi $file_path" --title="$file_name" --working-directory="$dir_name" --default-working-directory="$dir_name"
+	local dir_path="$(dirname $file_path)"
+	if [ "$dir_path" = '.' ]; then
+		dir_path=$(pwd)
+	elif ! [ "$dir_path[0]" = "/" ]; then
+		dir_path=$(pwd)
+	fi
+	##cd "$dir_path"
+    xfce4-terminal --tab --command="vi $file_path" --title="$file_name" --working-directory="$dir_path" --default-working-directory="$dir_path"
 }
 
 _xftvim "$@"
