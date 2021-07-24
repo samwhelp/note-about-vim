@@ -20,7 +20,7 @@ _xftnano () {
 	# if [[ "$file_path" == *".."* ]]; then
 	# 	echo '## Contain: ..'
 	# 	echo "$file_path"
-	# if
+	# fi
 
 	if [ "$dir_path" = '.' ]; then
 		dir_path="$(pwd)"
