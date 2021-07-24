@@ -1,18 +1,36 @@
 #!/usr/bin/env bash
 
+##
+## * $ man 3 dirname
+## * $ man 1 dirname
+## * $ man 3 basename
+## * $ man 1 basenaem
+##
+
+
 _xftmicro () {
 
 	local file_path="$1"
 	local file_name="$(basename $file_path)"
 	local dir_path="$(dirname $file_path)"
 
+	# echo  "$dir_path"
+	#
+	# ## Todo: handle ..
+	# if [[ "$file_path" == *".."* ]]; then
+	# 	echo '## Contain: ..'
+	# 	echo "$file_path"
+	# if
+
 	if [ "$dir_path" = '.' ]; then
 		dir_path="$(pwd)"
-	elif ! [ "$dir_path[0]" = "/" ]; then
-		dir_path="$(pwd)"
+	elif ! [ "${dir_path:0}" = "/" ]; then
+		dir_path="$(pwd)/$dir_path"
 	fi
 
+	#echo $dir_path
 	##cd "$dir_path"
+
 	xfce4-terminal --tab --command="micro $file_path" --title="$file_name" --working-directory="$dir_path" --default-working-directory="$dir_path"
 
 }
