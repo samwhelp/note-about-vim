@@ -24,7 +24,7 @@ _xftnano () {
 
 	if [ "$dir_path" = '.' ]; then
 		dir_path="$(pwd)"
-	elif ! [ "${dir_path:0}" = "/" ]; then
+	elif ! [ "${dir_path:0:1}" = "/" ]; then
 		dir_path="$(pwd)/$dir_path"
 	fi
 
