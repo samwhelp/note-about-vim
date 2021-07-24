@@ -7,6 +7,10 @@
 ## * $ man 3 basename
 ## * $ man 1 basenaem
 ## * https://en.wikipedia.org/wiki/Dirname
+## * https://en.wikipedia.org/wiki/Basename
+## * https://zh.wikipedia.org/zh-tw/Dirname
+## * https://zh.wikipedia.org/zh-tw/Basename
+##
 
 
 just_dir_path () {
@@ -28,7 +32,7 @@ just_dir_path () {
 	if ! [ -e "$target_path" ]; then
 		##echo "## File Not Exist:"
 		#echo "$target_path"
-		return 0
+		return 1
 	fi
 
 
@@ -87,7 +91,7 @@ find_dir_path () {
 	if ! [ -e "$target_path" ]; then
 		##echo "## File Not Exist:"
 		#echo "$target_path"
-		return 0
+		return 1
 	fi
 
 
@@ -127,14 +131,23 @@ find_dir_path () {
 }
 
 
-_xftt () {
+xftt_main () {
 
 	local target_path="$1"
+
+	# if ! [ -e "$target_path" ]; then
+	# 	echo "## File Not Exist:"
+	# 	echo "$target_path"
+	#
+	# 	return 1
+	# fi
+
 	local dir_path
 
-
 	#dir_path="$(find_dir_path "$target_path")"
-	dir_path="$(just_dir_path "$target_path")"
+	if ! dir_path="$(just_dir_path "$target_path")"; then
+		dir_path="$(pwd)"
+	fi
 
 	if [ "none$dir_path" = 'none' ]; then
 		dir_path="$(pwd)"
@@ -146,4 +159,4 @@ _xftt () {
 
 }
 
-_xftt "$@"
+xftt_main "$@"
