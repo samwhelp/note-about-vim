@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+
 ##
 ## * $ man 3 dirname
 ## * $ man 1 dirname
 ## * $ man 3 basename
 ## * $ man 1 basenaem
+## * https://en.wikipedia.org/wiki/Dirname
 ##
 
 
