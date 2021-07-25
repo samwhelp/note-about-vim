@@ -23,6 +23,7 @@ parent: 專案
 | [xftkak](xftkak) |
 | [xftnano](xftnano) |
 | [xftne](xftne) |
+| [xftemacs](xftemacs) |
 
 
 ## 按鍵綁定 (xfce4-terminal)

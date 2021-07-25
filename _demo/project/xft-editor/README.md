@@ -10,3 +10,4 @@
 | [xftkak](prototype-xftkak) |
 | [xftnano](prototype-xftnano) |
 | [xftne](prototype-xftne) |
+| [xftemacs](prototype-xftemacs) |

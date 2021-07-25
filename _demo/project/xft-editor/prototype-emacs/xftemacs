@@ -130,8 +130,8 @@ find_dir_path () {
 }
 
 
-xftvim_main () {
-	local editor='vi'
+xftemacs_main () {
+	local editor='emacs -nw'
 	local target_path="$1"
 	local file_path
 	local file_name
@@ -160,16 +160,16 @@ xftvim_main () {
 
 	file_path="$(realpath "$target_path")"
 
-	# if [ -d "$file_path" ]; then
-	#
-	# 	util_error_echo
-	# 	util_error_echo "## Is Dir:"
-	# 	util_error_echo
-	# 	util_error_echo "$target_path"
-	# 	util_error_echo
-	#
-	# 	return 1
-	# fi
+	if [ -d "$file_path" ]; then
+
+		util_error_echo
+		util_error_echo "## Is Dir:"
+		util_error_echo
+		util_error_echo "$target_path"
+		util_error_echo
+
+		return 1
+	fi
 
 	if ! file_name="$(find_file_name "$file_path")"; then
 		file_name="$(basename "$target_path")"
@@ -194,4 +194,4 @@ xftvim_main () {
 
 }
 
-xftvim_main "$@"
+xftemacs_main "$@"
