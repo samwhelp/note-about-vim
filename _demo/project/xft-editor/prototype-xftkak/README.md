@@ -6,6 +6,7 @@
 
 * [Kakoune](https://kakoune.org/)
 * [https://github.com/mawww/kakoune](https://github.com/mawww/kakoune)
+* Manjaro 探索筆記 / [micro](https://samwhelp.github.io/note-about-manjaro/read/adjustment/tool/kakoune.html)
 
 
 ## Install
@@ -35,4 +36,3 @@ make remove
 
 1. Launch `xfce4-terminal`
 2. Run `xftkak file`
-

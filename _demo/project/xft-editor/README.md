@@ -9,3 +9,4 @@
 | [xftmicro](prototype-xftmicro) |
 | [xftkak](prototype-xftkak) |
 | [xftnano](prototype-xftnano) |
+| [xftne](prototype-xftne) |

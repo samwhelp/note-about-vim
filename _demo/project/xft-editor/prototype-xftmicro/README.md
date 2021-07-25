@@ -6,6 +6,8 @@
 
 * [micro-editor](https://micro-editor.github.io/) ([GitHub](https://github.com/micro-editor)
 * [https://github.com/zyedidia/micro](https://github.com/zyedidia/micro)
+* Manjaro 探索筆記 / [micro](https://samwhelp.github.io/note-about-manjaro/read/adjustment/tool/micro.html)
+
 
 
 ## Install
@@ -35,4 +37,3 @@ make remove
 
 1. Launch `xfce4-terminal`
 2. Run `xftmicro file`
-
