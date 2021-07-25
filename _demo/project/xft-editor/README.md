@@ -3,6 +3,8 @@
 
 | Tool |
 | --- |
+| [xftt](prototype-xftt) |
+| [xfted](prototype-xfted) |
 | [xftvim](prototype-xftvim) |
 | [xftmicro](prototype-xftmicro) |
 | [xftkak](prototype-xftkak) |
