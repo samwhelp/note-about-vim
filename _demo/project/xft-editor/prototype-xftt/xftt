@@ -84,7 +84,7 @@ find_dir_path () {
 	local dir_path
 
 	if [ "none$target_path" = 'none' ]; then
-		target_path='.'
+		target_path="$(pwd)"
 	fi
 
 
