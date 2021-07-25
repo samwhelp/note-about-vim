@@ -16,6 +16,8 @@ parent: 專案
 
 | 工具 |
 | --- |
+| [xftt](xftt) |
+| [xfted](xfted) |
 | [xftvim](xftvim) |
 | [xftmicro](xftmicro) |
 | [xftkak](xftkak) |
