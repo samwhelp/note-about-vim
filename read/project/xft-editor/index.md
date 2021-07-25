@@ -24,7 +24,7 @@ parent: 專案
 | [xftnano](xftnano) |
 | [xftne](xftne) |
 | [xftemacs](xftemacs) |
-
+| [xftmcedit](xftmcedit) |
 
 ## 按鍵綁定 (xfce4-terminal)
 

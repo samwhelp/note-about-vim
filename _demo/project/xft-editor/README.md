@@ -11,3 +11,4 @@
 | [xftnano](prototype-xftnano) |
 | [xftne](prototype-xftne) |
 | [xftemacs](prototype-xftemacs) |
+| [xftmced](prototype-xftmced) |
