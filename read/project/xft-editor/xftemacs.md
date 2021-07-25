@@ -11,7 +11,7 @@ grand_parent: 專案
 
 ## 專案連結
 
-* [prototype-xftemacs](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftemacs)
+* [prototype-xftemacs](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype/xftemacs)
 
 
 ## 使用說明

@@ -11,7 +11,7 @@ grand_parent: 專案
 
 ## 專案連結
 
-* [prototype-xftne](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftne)
+* [prototype-xftne](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype/xftne)
 
 
 ## 使用說明

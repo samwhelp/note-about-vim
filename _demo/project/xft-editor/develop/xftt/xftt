@@ -1,0 +1,162 @@
+#!/usr/bin/env bash
+
+
+##
+## * $ man 3 dirname
+## * $ man 1 dirname
+## * $ man 3 basename
+## * $ man 1 basenaem
+## * https://en.wikipedia.org/wiki/Dirname
+## * https://en.wikipedia.org/wiki/Basename
+## * https://zh.wikipedia.org/zh-tw/Dirname
+## * https://zh.wikipedia.org/zh-tw/Basename
+##
+
+
+just_dir_path () {
+
+	##
+	## * target_path is dir --> show target_path
+	## * target_path is file --> show parent_path
+	##
+
+
+	local target_path="$1"
+	local file_path
+	local dir_path
+
+	if [ "none$target_path" = 'none' ]; then
+		target_path='.'
+	fi
+
+	if ! [ -e "$target_path" ]; then
+		##echo "## File Not Exist:"
+		#echo "$target_path"
+		return 1
+	fi
+
+
+	if [ -d "$target_path" ]; then					## for dir
+		#echo "## Handle Dir:"
+		#echo "$target_path"
+
+		if [ "${target_path:0:1}" = '/' ]; then		## for example [/] or [/boot/grub]
+			#echo '## Lead: /'
+			if [ $target_path = '/' ]; then 		## for [/]
+				dir_path='/'
+			else									## for example [/boot/grub]
+				dir_path="$target_path"
+			fi
+		else										## for example [.] or [./..] or [..] or [../..] or [sub/sub1]
+			dir_path="$(pwd)/$target_path"
+		fi
+
+		#dir_path="$(cd -- "$dir_path" 2> /dev/null && pwd)"
+		#dir_path="$(cd -- "$dir_path" 2> /dev/null ; pwd)"
+		dir_path="$(cd -- "$dir_path" ; pwd)"
+		echo $dir_path
+		return 0
+	fi
+
+	## for file
+	#echo "## Handle File:"
+	#echo "$target_path"
+
+	file_path="$target_path"
+	#dir_path="$(cd -- "$(dirname -- "$file_path")" 2> /dev/null && pwd)"
+	#dir_path="$(cd -- "$(dirname -- "$file_path")" 2> /dev/null ; pwd)"
+	dir_path="$(cd -- "$(dirname -- "$file_path")" ; pwd)"
+	echo "$dir_path"
+	return 0
+
+}
+
+
+find_dir_path () {
+
+	##
+	## * target_path is dir --> show parent_path
+	## * target_path is file --> show parent_path
+	##
+
+	local target_path="$1"
+	local file_path
+	local dir_path
+
+	if [ "none$target_path" = 'none' ]; then
+		target_path="$(pwd)"
+	fi
+
+
+	if ! [ -e "$target_path" ]; then
+		##echo "## File Not Exist:"
+		#echo "$target_path"
+		return 1
+	fi
+
+
+	if [ -d "$target_path" ]; then					## for dir
+		#echo "## Handle Dir:"
+		#echo "$target_path"
+
+		if [ "${target_path:0:1}" = '/' ]; then		## for example [/] or [/boot/grub]
+			#echo '## Lead: /'
+			if [ $target_path = '/' ]; then 		## for [/]
+				dir_path='/'
+			else									## for example [/boot/grub]
+				dir_path="$target_path/.."
+			fi
+		else										## for example [.] or [./..] or [..] or [../..] or [sub/sub1]
+			dir_path="$(pwd)/$target_path/.."
+		fi
+
+		#dir_path="$(cd -- "$dir_path" 2> /dev/null && pwd)"
+		#dir_path="$(cd -- "$dir_path" 2> /dev/null ; pwd)"
+		dir_path="$(cd -- "$dir_path" ; pwd)"
+		echo $dir_path
+		return 0
+	fi
+
+	## for file
+	#echo "## Handle File:"
+	#echo "$target_path"
+
+	file_path="$target_path"
+	#dir_path="$(cd -- "$(dirname -- "$file_path")" 2> /dev/null && pwd)"
+	#dir_path="$(cd -- "$(dirname -- "$file_path")" 2> /dev/null ; pwd)"
+	dir_path="$(cd -- "$(dirname -- "$file_path")" ; pwd)"
+	echo "$dir_path"
+	return 0
+
+}
+
+
+xftt_main () {
+
+	local target_path="$1"
+
+	# if ! [ -e "$target_path" ]; then
+	# 	echo "## File Not Exist:"
+	# 	echo "$target_path"
+	#
+	# 	return 1
+	# fi
+
+	local dir_path
+
+	#dir_path="$(find_dir_path "$target_path")"
+	if ! dir_path="$(just_dir_path "$target_path")"; then
+		dir_path="$(pwd)"
+	fi
+
+	if [ "none$dir_path" = 'none' ]; then
+		dir_path="$(pwd)"
+	fi
+
+	#echo $dir_path
+
+	xfce4-terminal --tab --title="$dir_path" --working-directory="$dir_path" --default-working-directory="$dir_path"
+
+}
+
+xftt_main "$@"

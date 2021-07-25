@@ -11,7 +11,7 @@ grand_parent: 專案
 
 ## 專案連結
 
-* [prototype-xftt](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftt)
+* [prototype-xftt](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype/xftt)
 
 
 ## 使用說明

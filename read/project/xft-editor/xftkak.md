@@ -11,7 +11,7 @@ grand_parent: 專案
 
 ## 專案連結 
 
-* [prototype-xftkak](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype-xftkak)
+* [prototype-xftkak](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/xft-editor/prototype/xftkak)
 
 
 ## 使用說明
