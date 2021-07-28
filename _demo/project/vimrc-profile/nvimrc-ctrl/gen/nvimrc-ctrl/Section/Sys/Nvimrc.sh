@@ -5,21 +5,26 @@
 ##
 
 is_nvimrc_dir () {
-	local dir_path="$1"
-	local vimrc_file_path="$dir_path/init.vim"
 
-	if [ ! -f "$vimrc_file_path" ]; then
-		return 1
+	local dir_path="$1"
+	local vimrc_file_path="$dir_path/init.vim" ## ~/.vimrc-profile/demo/init.vim
+	local luarc_file_path="$dir_path/init.lua" ## ~/.vimrc-profile/demo/init.lua
+
+	if [[ -f "$vimrc_file_path" || -f "$luarc_file_path" ]]; then ## check ~/.vimrc-profile/demo/init.vim
+		return 0
 	fi
 
-	return 0
+	return 1
+
 }
 
 is_not_nvimrc_dir () {
+
 	local dir_path="$1"
 	local vimrc_file_path="$dir_path/init.vim" ## ~/.vimrc-profile/demo/init.vim
+	local luarc_file_path="$dir_path/init.lua" ## ~/.vimrc-profile/demo/init.lua
 
-	if [ -f "$vimrc_file_path" ]; then ## check ~/.vimrc-profile/demo/init.vim
+	if [[ -f "$vimrc_file_path" || -f "$luarc_file_path" ]]; then ## check ~/.vimrc-profile/demo/init.vim
 		return 1
 	fi
 
