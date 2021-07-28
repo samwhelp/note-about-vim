@@ -4,6 +4,10 @@
 * [note-about-vim](https://samwhelp.github.io/note-about-vim/) ([GitHub](https://github.com/samwhelp/note-about-vim))
 
 
+## 相關筆記
+
+* [nvim 探索筆記](https://samwhelp.github.io/note-about-nvim/) ([GitHub](https://github.com/samwhelp/note-about-nvim))
+
 
 ## 相關討論
 
