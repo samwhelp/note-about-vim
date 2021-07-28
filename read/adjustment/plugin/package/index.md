@@ -45,5 +45,5 @@ parent: 擴充套件
 | Path | Note |
 | --- | --- |
 | ~/.cache/xvim/site/pack | package dir path |
-| ~/.cache/xvim/site/pack/themes/start/dracula | dracula dir path |
-| ~/.cache/xvim/site/pack/themes/start/monokai | monokai dir path |
+| ~/.cache/xvim/site/pack/theme/start/dracula | dracula dir path |
+| ~/.cache/xvim/site/pack/theme/start/monokai | monokai dir path |
