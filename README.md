@@ -52,11 +52,17 @@
 
 ### 專案
 
-| 工具 |
-| --- |
-| [vimrc-get](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-get) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get)) |
-| [vimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)) |
-| [nvimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/nvimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)) |
+| 工具 | 功能 |
+| --- | --- |
+| [vimrc-get](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-get) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-get)) | 輔助下載 vimrc |
+| [vimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)) | 輔助切換 vimrc (~/.vim) |
+| [nvimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/nvimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)) | 輔助切換 nvimrc (~/.config/nvim) |
+
+## 輔助工具
+
+| 工具 | 功能 |
+| --- | --- |
+| [xfteditor](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/) | 輔助「檔案管理器」，右鍵開啟檔案到「xfce-terminal」的「新頁籤(Tab)」 |
 
 
 | Vimrc |
@@ -66,3 +72,4 @@
 | [lvim](https://samwhelp.github.io/note-about-vim/read/project/lvim.html) |
 | [hvim](https://samwhelp.github.io/note-about-vim/read/project/hvim.html) |
 | [ivim](https://samwhelp.github.io/note-about-vim/read/project/ivim.html) |
+| [cvim](https://samwhelp.github.io/note-about-vim/read/project/cvim.html) |
