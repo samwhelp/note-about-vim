@@ -46,6 +46,12 @@ vimrc-get hvim
 vimrc-get ivim
 ```
 
+### cvim
+
+``` sh
+vimrc-get cvim
+```
+
 ### all
 
 ``` sh
