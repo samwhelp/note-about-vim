@@ -26,6 +26,7 @@
 * [按鍵綁定](#按鍵綁定)
 * [擴充套件](#擴充套件)
 * [專案](#專案)
+* [輔助工具](#輔助工具)
 
 
 ### 外觀微調
@@ -62,12 +63,6 @@
 | [vimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/vimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/vimrc-ctrl)) | 輔助切換 vimrc (~/.vim) |
 | [nvimrc-ctrl](https://samwhelp.github.io/note-about-vim/read/project/vimrc-profile/nvimrc-ctrl) ([GitHub](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/project/vimrc-profile/nvimrc-ctrl)) | 輔助切換 nvimrc (~/.config/nvim) |
 
-## 輔助工具
-
-| 工具 | 功能 |
-| --- | --- |
-| [xfteditor](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/) | 輔助「檔案管理器」，右鍵開啟檔案到「xfce-terminal」的「新頁籤(Tab)」 |
-
 
 | Vimrc |
 | --- |
@@ -77,3 +72,10 @@
 | [hvim](https://samwhelp.github.io/note-about-vim/read/project/hvim.html) |
 | [ivim](https://samwhelp.github.io/note-about-vim/read/project/ivim.html) |
 | [cvim](https://samwhelp.github.io/note-about-vim/read/project/cvim.html) |
+
+
+## 輔助工具
+
+| 工具 | 功能 |
+| --- | --- |
+| [xfteditor](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/) | 輔助「檔案管理器」，右鍵開啟檔案到「xfce-terminal」的「新頁籤(Tab)」 |
