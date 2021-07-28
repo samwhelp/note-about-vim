@@ -14,13 +14,14 @@ parent: 專案
 
 ## 應用工具
 
-應用「xfce4-terminal --tab」這個功能衍生的輔助工具
+應用「xfce4-terminal --tab」這個功能，衍生的輔助工具
 
 | 工具 | For Editor |
 | --- | --- |
 | [xftt](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xftt) | 開啟新Tab，切換到指定資料夾 |
 | [xfted](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xfted) | 根據「EDITOR」的設定 |
 | [xftvim](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xftvim) | [vim](https://www.vim.org/) or [nvim](https://neovim.io/) |
+| [xftlvim](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xftlvim) | [lvim](https://github.com/ChristianChiarulli/LunarVim) |
 | [xftmicro](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xftmicro) | [micro](https://micro-editor.github.io/) |
 | [xftkak](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xftkak) | [kak](https://kakoune.org/) |
 | [xftnano](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/xftnano) | [nano](https://www.nano-editor.org/) |
