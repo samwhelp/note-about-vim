@@ -1,0 +1,2 @@
+
+nvim -u test.vim
