@@ -5,6 +5,7 @@
 ##
 
 all_install () {
+	none_install
 	svim_install
 	ivim_install
 	mvim_install

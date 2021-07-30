@@ -26,6 +26,7 @@ fi
 	#https://en.wikipedia.org/wiki/Here_document
 local selected=$(fzf << EOF
 all
+none
 cvim
 hvim
 ivim
