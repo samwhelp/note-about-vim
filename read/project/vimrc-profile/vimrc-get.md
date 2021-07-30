@@ -16,6 +16,13 @@ grand_parent: 專案
 
 ## Usage
 
+
+### none
+
+``` sh
+vimrc-get none
+```
+
 ### svim
 
 ``` sh
