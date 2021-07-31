@@ -18,16 +18,17 @@ call plug#begin('~/.cache/xvim/plug')
 
 	" ## https://www.jianshu.com/p/aadce0fe9649
 	" ## https://github.com/liuchengxu/space-vim-theme
-	Plug 'liuchengxu/space-vim-theme'
+	"Plug 'liuchengxu/space-vim-theme'
 
 	" ## https://github.com/sickill/vim-monokai
-	Plug 'sickill/vim-monokai'
+	"Plug 'sickill/vim-monokai'
+
+	" ## https://github.com/joshdick/onedark.vim
+	"Plug 'joshdick/onedark.vim'
 
 	" ## https://github.com/morhetz/gruvbox
 	Plug 'morhetz/gruvbox'
 
-	" ## https://github.com/joshdick/onedark.vim
-	Plug 'joshdick/onedark.vim'
 
 
 call plug#end()
