@@ -47,13 +47,13 @@ mvim_repo_clone () {
 }
 
 mvim_bin_install () {
-	echo "install -Dm 755 $HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/bin/mvim $HOME/.local/bin/mvim"
-	install -Dm 755 "$HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/bin/mvim" "$HOME/.local/bin/mvim"
+	echo "install -Dm 755 $THE_VIMRC_PROFILE_DIR_PATH/mvim/.ctrl/asset/nvim/bin/mvim $HOME/.local/bin/mvim"
+	install -Dm 755 "$THE_VIMRC_PROFILE_DIR_PATH/mvim/.ctrl/asset/nvim/bin/mvim" "$HOME/.local/bin/mvim"
 }
 
 mvim_app_install () {
-	echo "install -Dm 644 $HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop $HOME/.local/share/applications/mvim.desktop"
-	install -Dm 644 "$HOME/.vimrc-profile/mvim/.ctrl/asset/nvim/desktop/mvim.desktop" "$HOME/.local/share/applications/mvim.desktop"
+	echo "install -Dm 644 $THE_VIMRC_PROFILE_DIR_PATH/mvim/.ctrl/asset/nvim/desktop/mvim.desktop $HOME/.local/share/applications/mvim.desktop"
+	install -Dm 644 "$THE_VIMRC_PROFILE_DIR_PATH/mvim/.ctrl/asset/nvim/desktop/mvim.desktop" "$HOME/.local/share/applications/mvim.desktop"
 }
 
 mvim_vim_plug_prepare () {
@@ -62,8 +62,8 @@ mvim_vim_plug_prepare () {
 }
 
 mvim_vim_plug_install () {
-	echo "vim -nNRe -u $HOME/.vimrc-profile/mvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
-	vim -nNRe -u "$HOME/.vimrc-profile/mvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+	echo "vim -nNRe -u $THE_VIMRC_PROFILE_DIR_PATH/mvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$THE_VIMRC_PROFILE_DIR_PATH/mvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 mvim_cache_dir_prepare () {

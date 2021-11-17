@@ -47,13 +47,13 @@ cvim_repo_clone () {
 }
 
 cvim_bin_install () {
-	echo "install -Dm 755 $HOME/.vimrc-profile/cvim/.ctrl/asset/nvim/bin/cvim $HOME/.local/bin/cvim"
-	install -Dm 755 "$HOME/.vimrc-profile/cvim/.ctrl/asset/nvim/bin/cvim" "$HOME/.local/bin/cvim"
+	echo "install -Dm 755 $THE_VIMRC_PROFILE_DIR_PATH/cvim/.ctrl/asset/nvim/bin/cvim $HOME/.local/bin/cvim"
+	install -Dm 755 "$THE_VIMRC_PROFILE_DIR_PATH/cvim/.ctrl/asset/nvim/bin/cvim" "$HOME/.local/bin/cvim"
 }
 
 cvim_app_install () {
-	echo "install -Dm 644 $HOME/.vimrc-profile/cvim/.ctrl/asset/nvim/desktop/cvim.desktop $HOME/.local/share/applications/cvim.desktop"
-	install -Dm 644 "$HOME/.vimrc-profile/cvim/.ctrl/asset/nvim/desktop/cvim.desktop" "$HOME/.local/share/applications/cvim.desktop"
+	echo "install -Dm 644 $THE_VIMRC_PROFILE_DIR_PATH/cvim/.ctrl/asset/nvim/desktop/cvim.desktop $HOME/.local/share/applications/cvim.desktop"
+	install -Dm 644 "$THE_VIMRC_PROFILE_DIR_PATH/cvim/.ctrl/asset/nvim/desktop/cvim.desktop" "$HOME/.local/share/applications/cvim.desktop"
 }
 
 cvim_vim_plug_prepare () {
@@ -63,8 +63,8 @@ cvim_vim_plug_prepare () {
 
 
 cvim_vim_plug_install () {
-	echo "vim -nNRe -u $HOME/.vimrc-profile/cvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
-	vim -nNRe -u "$HOME/.vimrc-profile/cvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+	echo "vim -nNRe -u $THE_VIMRC_PROFILE_DIR_PATH/cvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$THE_VIMRC_PROFILE_DIR_PATH/cvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 cvim_cache_dir_prepare () {

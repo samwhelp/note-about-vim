@@ -45,13 +45,13 @@ ivim_repo_clone () {
 }
 
 ivim_bin_install () {
-	echo "install -Dm 755 $HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/bin/ivim $HOME/.local/bin/ivim"
-	install -Dm 755 "$HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/bin/ivim" "$HOME/.local/bin/ivim"
+	echo "install -Dm 755 $THE_VIMRC_PROFILE_DIR_PATH/ivim/.ctrl/asset/nvim/bin/ivim $HOME/.local/bin/ivim"
+	install -Dm 755 "$THE_VIMRC_PROFILE_DIR_PATH/ivim/.ctrl/asset/nvim/bin/ivim" "$HOME/.local/bin/ivim"
 }
 
 ivim_app_install () {
-	echo "install -Dm 644 $HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/desktop/ivim.desktop $HOME/.local/share/applications/ivim.desktop"
-	install -Dm 644 "$HOME/.vimrc-profile/ivim/.ctrl/asset/nvim/desktop/ivim.desktop" "$HOME/.local/share/applications/ivim.desktop"
+	echo "install -Dm 644 $THE_VIMRC_PROFILE_DIR_PATH/ivim/.ctrl/asset/nvim/desktop/ivim.desktop $HOME/.local/share/applications/ivim.desktop"
+	install -Dm 644 "$THE_VIMRC_PROFILE_DIR_PATH/ivim/.ctrl/asset/nvim/desktop/ivim.desktop" "$HOME/.local/share/applications/ivim.desktop"
 }
 
 ivim_cache_dir_prepare () {

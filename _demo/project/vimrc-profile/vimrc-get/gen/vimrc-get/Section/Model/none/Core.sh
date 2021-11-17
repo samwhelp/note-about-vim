@@ -7,11 +7,11 @@
 none_install () {
 	echo
 
-	echo "mkdir -p $HOME/.vimrc-profile/none"
-	mkdir -p "$HOME/.vimrc-profile/none"
+	echo "mkdir -p $THE_VIMRC_PROFILE_DIR_PATH/none"
+	mkdir -p "$THE_VIMRC_PROFILE_DIR_PATH/none"
 
-	echo "cd $HOME/.vimrc-profile/none"
-	cd "$HOME/.vimrc-profile/none"
+	echo "cd $THE_VIMRC_PROFILE_DIR_PATH/none"
+	cd "$THE_VIMRC_PROFILE_DIR_PATH/none"
 
 	# touch vimrc
 	echo "echo > vimrc"
@@ -58,13 +58,13 @@ none_repo_clone () {
 }
 
 none_bin_install () {
-	echo "install -Dm 755 $HOME/.vimrc-profile/none/.ctrl/asset/nvim/bin/none $HOME/.local/bin/none"
-	install -Dm 755 "$HOME/.vimrc-profile/none/.ctrl/asset/nvim/bin/none" "$HOME/.local/bin/none"
+	echo "install -Dm 755 $THE_VIMRC_PROFILE_DIR_PATH/none/.ctrl/asset/nvim/bin/none $HOME/.local/bin/none"
+	install -Dm 755 "$THE_VIMRC_PROFILE_DIR_PATH/none/.ctrl/asset/nvim/bin/none" "$HOME/.local/bin/none"
 }
 
 none_app_install () {
-	echo "install -Dm 644 $HOME/.vimrc-profile/none/.ctrl/asset/nvim/desktop/none.desktop $HOME/.local/share/applications/none.desktop"
-	install -Dm 644 "$HOME/.vimrc-profile/none/.ctrl/asset/nvim/desktop/none.desktop" "$HOME/.local/share/applications/none.desktop"
+	echo "install -Dm 644 $THE_VIMRC_PROFILE_DIR_PATH/none/.ctrl/asset/nvim/desktop/none.desktop $HOME/.local/share/applications/none.desktop"
+	install -Dm 644 "$THE_VIMRC_PROFILE_DIR_PATH/none/.ctrl/asset/nvim/desktop/none.desktop" "$HOME/.local/share/applications/none.desktop"
 }
 
 none_vim_plug_prepare () {
@@ -74,8 +74,8 @@ none_vim_plug_prepare () {
 
 
 none_vim_plug_install () {
-	echo "vim -nNRe -u $HOME/.vimrc-profile/none/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
-	vim -nNRe -u "$HOME/.vimrc-profile/none/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+	echo "vim -nNRe -u $THE_VIMRC_PROFILE_DIR_PATH/none/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$THE_VIMRC_PROFILE_DIR_PATH/none/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 none_cache_dir_prepare () {

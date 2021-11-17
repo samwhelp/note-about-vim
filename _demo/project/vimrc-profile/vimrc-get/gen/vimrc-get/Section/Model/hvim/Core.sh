@@ -47,13 +47,13 @@ hvim_repo_clone () {
 }
 
 hvim_bin_install () {
-	echo "install -Dm 755 $HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/bin/hvim $HOME/.local/bin/hvim"
-	install -Dm 755 "$HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/bin/hvim" "$HOME/.local/bin/hvim"
+	echo "install -Dm 755 $THE_VIMRC_PROFILE_DIR_PATH/hvim/.ctrl/asset/nvim/bin/hvim $HOME/.local/bin/hvim"
+	install -Dm 755 "$THE_VIMRC_PROFILE_DIR_PATH/hvim/.ctrl/asset/nvim/bin/hvim" "$HOME/.local/bin/hvim"
 }
 
 hvim_app_install () {
-	echo "install -Dm 644 $HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop $HOME/.local/share/applications/hvim.desktop"
-	install -Dm 644 "$HOME/.vimrc-profile/hvim/.ctrl/asset/nvim/desktop/hvim.desktop" "$HOME/.local/share/applications/hvim.desktop"
+	echo "install -Dm 644 $THE_VIMRC_PROFILE_DIR_PATH/hvim/.ctrl/asset/nvim/desktop/hvim.desktop $HOME/.local/share/applications/hvim.desktop"
+	install -Dm 644 "$THE_VIMRC_PROFILE_DIR_PATH/hvim/.ctrl/asset/nvim/desktop/hvim.desktop" "$HOME/.local/share/applications/hvim.desktop"
 }
 
 hvim_vim_plug_prepare () {
@@ -63,8 +63,8 @@ hvim_vim_plug_prepare () {
 
 
 hvim_vim_plug_install () {
-	echo "vim -nNRe -u $HOME/.vimrc-profile/hvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
-	vim -nNRe -u "$HOME/.vimrc-profile/hvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+	echo "vim -nNRe -u $THE_VIMRC_PROFILE_DIR_PATH/hvim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$THE_VIMRC_PROFILE_DIR_PATH/hvim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 hvim_cache_dir_prepare () {

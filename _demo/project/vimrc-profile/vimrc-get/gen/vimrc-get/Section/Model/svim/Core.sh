@@ -47,13 +47,13 @@ svim_repo_clone () {
 }
 
 svim_bin_install () {
-	echo "install -Dm 755 $HOME/.vimrc-profile/svim/.ctrl/asset/nvim/bin/svim $HOME/.local/bin/svim"
-	install -Dm 755 "$HOME/.vimrc-profile/svim/.ctrl/asset/nvim/bin/svim" "$HOME/.local/bin/svim"
+	echo "install -Dm 755 $THE_VIMRC_PROFILE_DIR_PATH/svim/.ctrl/asset/nvim/bin/svim $HOME/.local/bin/svim"
+	install -Dm 755 "$THE_VIMRC_PROFILE_DIR_PATH/svim/.ctrl/asset/nvim/bin/svim" "$HOME/.local/bin/svim"
 }
 
 svim_app_install () {
-	echo "install -Dm 644 $HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop $HOME/.local/share/applications/svim.desktop"
-	install -Dm 644 "$HOME/.vimrc-profile/svim/.ctrl/asset/nvim/desktop/svim.desktop" "$HOME/.local/share/applications/svim.desktop"
+	echo "install -Dm 644 $THE_VIMRC_PROFILE_DIR_PATH/svim/.ctrl/asset/nvim/desktop/svim.desktop $HOME/.local/share/applications/svim.desktop"
+	install -Dm 644 "$THE_VIMRC_PROFILE_DIR_PATH/svim/.ctrl/asset/nvim/desktop/svim.desktop" "$HOME/.local/share/applications/svim.desktop"
 }
 
 svim_vim_plug_prepare () {
@@ -62,8 +62,8 @@ svim_vim_plug_prepare () {
 }
 
 svim_vim_plug_install () {
-	echo "vim -nNRe -u $HOME/.vimrc-profile/svim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
-	vim -nNRe -u "$HOME/.vimrc-profile/svim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
+	echo "vim -nNRe -u $THE_VIMRC_PROFILE_DIR_PATH/svim/vimrc -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'"
+	vim -nNRe -u "$THE_VIMRC_PROFILE_DIR_PATH/svim/vimrc" -c 'try | :PlugInstall | catch | echomsg "!PlugInstall Error!" | finally | :qa! | endtry'
 }
 
 svim_cache_dir_prepare () {
