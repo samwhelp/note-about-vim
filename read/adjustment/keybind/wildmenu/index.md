@@ -7,4 +7,6 @@ parent: 按鍵綁定
 
 # wildmenu
 
-* [submenu](submenu.md)
+| 議題 |
+| --- |
+| [submenu](submenu.md) |
