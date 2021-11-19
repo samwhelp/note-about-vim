@@ -36,5 +36,7 @@ nnoremap <S-l> :bnext<CR>
 
 
 " ## Switch TabPage
-nnoremap <S-PageUp> :tabprevious<CR>
-nnoremap <S-PageDown> :tabnext<CR>
+"nnoremap <S-PageUp> :tabprevious<CR>
+"nnoremap <S-PageDown> :tabnext<CR>
+nnoremap <S-Home> :tabprevious<CR>
+nnoremap <S-End> :tabnext<CR>
