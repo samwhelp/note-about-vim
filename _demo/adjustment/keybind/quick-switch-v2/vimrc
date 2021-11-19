@@ -1,0 +1,40 @@
+""
+"" * https://vimhelp.org/intro.txt.html#key-codes
+""
+
+" ## for vim work
+set nocompatible
+
+scriptencoding utf-8
+
+
+" ## set hidden for [Switch Buffer] smooth
+set hidden
+
+
+" ## Switch Window
+nnoremap <BS> <C-w>W
+nnoremap <Tab> <C-w>w
+
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+
+" ## Resize Window
+nnoremap <S-Down> <C-w>-
+nnoremap <S-Up> <C-w>+
+nnoremap <S-Left> <C-w><
+nnoremap <S-Right> <C-w>>
+
+
+" ## Switch Buffer
+nnoremap <S-h> :bprevious<CR>
+nnoremap <S-l> :bnext<CR>
+
+
+
+" ## Switch TabPage
+nnoremap <S-PageUp> :tabprevious<CR>
+nnoremap <S-PageDown> :tabnext<CR>

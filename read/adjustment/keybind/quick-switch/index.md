@@ -73,3 +73,8 @@ nnoremap <C-l> :tabnext<CR>
 ## 範例
 
 * [quick-switch](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/quick-switch)
+
+
+## 對照
+
+* [版本二](v2.md)
