@@ -1,0 +1,9 @@
+" ## for vim work
+set nocompatible
+
+scriptencoding utf-8
+
+
+" ## Copy To Clipboard
+set mouse=a
+vnoremap <S-Tab> "+y
