@@ -1,3 +1,7 @@
+set nocompatible
+
+scriptencoding utf-8
+
 
 " ## set hidden for [Switch Buffer] smooth
 set hidden
@@ -9,8 +13,8 @@ nnoremap <BS> <C-w>W
 
 
 " ## Switch Buffer
-nnoremap <C-j> :bprevious<CR>
-nnoremap <C-k> :bnext<CR>
+nnoremap <C-k> :bprevious<CR>
+nnoremap <C-j> :bnext<CR>
 
 
 " ## Switch TabPage
