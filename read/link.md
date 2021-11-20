@@ -54,6 +54,7 @@ has_children: true
 * 阮一峰的網絡日誌 / [Vim 配置入門](http://www.ruanyifeng.com/blog/2018/09/vimrc.html)
 * MagicLen / [個人化自己的vim文字編輯器(.vimrc設定教學)](https://magiclen.org/vimrc/)
 * [Vim 插件管理器概覽](https://www.jianshu.com/p/780243c792cc)
+* [vim and the quickfix list: jump to a location, search and replace in multiple files, and other shenanigans](https://vonheikemen.github.io/devlog/tools/vim-and-the-quickfix-list/)
 
 
 ## Help
