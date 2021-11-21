@@ -74,6 +74,12 @@ has_children: true
 | `nvim -c ':help initialization'` | [#read](https://neovim.io/doc/user/starting.html#initialization) |
 
 
+## Cheatsheet
+
+* awesome-cheatsheets / [vim](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/vim.txt) ([中文版](https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt))
+* lvim-tech / lvim / [help](https://github.com/lvim-tech/lvim/tree/production/help)
+
+
 ## Just the Docs
 
 * [Just the Docs](https://pmarsceill.github.io/just-the-docs/) ([GitHub](https://github.com/pmarsceill/just-the-docs))
