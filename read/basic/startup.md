@@ -34,7 +34,7 @@ parent: 基本功
 
 ## Vimrc Path
 
-| 實做 | 路徑 | 
+| 實作 | 路徑 | 
 | --- | --- |
 | vim | ~/.vim/vimrc |
 | nvim | ~/.config/nvim/init.vim |

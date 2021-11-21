@@ -27,7 +27,7 @@ parent: 基本功
 | [execute](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/basic/include_vim_script/runtime/execute) | |
 
 
-## 實做
+## 實作
 
 | 範例 | 說明 |
 | --- | --- |

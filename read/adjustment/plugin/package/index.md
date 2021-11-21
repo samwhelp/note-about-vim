@@ -33,7 +33,7 @@ parent: 擴充套件
 | [monokai](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/plugin/package/theme/monokai) | |
 
 
-### 實做
+### 實作
 
 | 範例 | 說明 |
 | --- | --- |
