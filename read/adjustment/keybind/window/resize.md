@@ -31,7 +31,7 @@ nnoremap <S-Right> <C-w>>
 * [https://samwhelp.github.io/tool-svim-doc/read/en_us/#/feature?id=window-resize](https://samwhelp.github.io/tool-svim-doc/read/en_us/#/feature?id=window-resize)
 
 
-## 表格
+## 表格說明
 
 | 按鍵 | 對應 |
 | --- | --- |
@@ -41,6 +41,6 @@ nnoremap <S-Right> <C-w>>
 | `Shift + Right` | [&lt;C-w&gt;>](https://vimhelp.org/windows.txt.html#CTRL-W_>) |
 
 
-## 範例
+## 實作範例
 
 * [window-resize](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/window-resize)
