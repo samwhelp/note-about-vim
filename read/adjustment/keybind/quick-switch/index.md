@@ -62,17 +62,17 @@ nnoremap <C-l> :tabnext<CR>
 
 | 按鍵 | 對應 | 說明 |
 | --- | --- | --- |
-| `<Backspace>` | [C-w W](https://vimhelp.org/windows.txt.html#CTRL-W_W) | 切換到上一個 Window |
-| `<Tab>` | [C-w w](https://vimhelp.org/windows.txt.html#CTRL-W_w) | 切換到下一個 Window |
+| `<Backspace>` | [&lt;C-w&gt;W](https://vimhelp.org/windows.txt.html#CTRL-W_W) | 切換到上一個 Window |
+| `<Tab>` | [&lt;C-w&gt;w](https://vimhelp.org/windows.txt.html#CTRL-W_w) | 切換到下一個 Window |
 | `Ctrl + k` | [:bprevious](https://vimhelp.org/windows.txt.html#:bprevious) | 切換到上一個 Buffer |
 | `Ctrl + j` | [:bnext](https://vimhelp.org/windows.txt.html#:bnext) | 切換到下一個 Buffer |
 | `Ctrl + h` | [:tabprevious](https://vimhelp.org/tabpage.txt.html#:tabprevious) | 切換到上一個 TabPage |
 | `Ctrl + l` | [:tabnext](https://vimhelp.org/tabpage.txt.html#:tabnext) | 切換到下一個 TabPage |
 
 
-## 範例
+## 設定範例
 
-* [quick-switch](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/quick-switch)
+* [quick-switch](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/adjustment/keybind/quick-switch) / [vimrc](https://github.com/samwhelp/note-about-vim/blob/gh-pages/_demo/adjustment/keybind/quick-switch/vimrc)
 
 
 ## 對照
