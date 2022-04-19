@@ -60,7 +60,7 @@ nnoremap <C-l> :tabnext<CR>
 ## 表格說明
 
 
-| 按鍵 | 對應 | 說明 |
+| 按鍵組合 | 對應 | 說明 |
 | --- | --- | --- |
 | `<Backspace>` | [&lt;C-w&gt;W](https://vimhelp.org/windows.txt.html#CTRL-W_W) | 切換到上一個 Window |
 | `<Tab>` | [&lt;C-w&gt;w](https://vimhelp.org/windows.txt.html#CTRL-W_w) | 切換到下一個 Window |
