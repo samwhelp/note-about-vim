@@ -7,11 +7,18 @@
 Tool Build Vimrc
 
 
-## Howto
+## Usage
 
 
 ### Build
 
 ``` sh
 $ make build
+```
+
+
+### Sync
+
+``` sh
+$ make sync
 ```
