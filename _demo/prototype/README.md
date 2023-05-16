@@ -9,3 +9,4 @@
 | [mvim](mvim) |
 | [hvim](hvim) |
 | [pvim](pvim) |
+| [cvim](cvim) |
