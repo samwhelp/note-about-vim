@@ -46,8 +46,8 @@ syntax on
 "colorscheme koehler
 "colorscheme morning
 "colorscheme murphy
-"colorscheme pablo      			" *
-"colorscheme peachpuff				" *
+"colorscheme pablo					" *
+"colorscheme peachpuff
 "colorscheme ron
 "colorscheme shine
 colorscheme slate					" *
