@@ -66,11 +66,11 @@
 
 | Vimrc | Prototype |
 | --- | --- |
+| [ivim](https://samwhelp.github.io/note-about-vim/read/project/ivim.html) | [prototype](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/ivim)  |
 | [svim](https://samwhelp.github.io/note-about-vim/read/project/svim.html) |  |
 | [mvim](https://samwhelp.github.io/note-about-vim/read/project/mvim.html) |  |
 | [lvim](https://samwhelp.github.io/note-about-vim/read/project/lvim.html) |  |
 | [hvim](https://samwhelp.github.io/note-about-vim/read/project/hvim.html) |  |
-| [ivim](https://samwhelp.github.io/note-about-vim/read/project/ivim.html) | [prototype](https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/ivim)  |
 | [cvim](https://samwhelp.github.io/note-about-vim/read/project/cvim.html) |  |
 
 
