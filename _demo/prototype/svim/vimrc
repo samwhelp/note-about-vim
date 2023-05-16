@@ -48,7 +48,8 @@ call plug#begin('~/.cache/svim/plug')
 
 	" ## https://github.com/lilydjwg/fcitx.vim
 	"Plug 'lilydjwg/fcitx.vim'
-	Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx4' }
+	"Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx4' }
+	Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
 
 	" ## https://github.com/ntpeters/vim-better-whitespace
 	Plug 'ntpeters/vim-better-whitespace'
