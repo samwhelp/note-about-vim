@@ -21,7 +21,7 @@
 "" ### nvim
 ""
 "" $ curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/samwhelp/note-about-vim/gh-pages/_demo/prototype/ivim/vimrc
-##
+""
 
 
 ""
