@@ -3,6 +3,7 @@
 """""""""""""""""""""""""""" Option """"""""""""""""""""""""""""""""""""""""""""
 <?php include_once(__DIR__ . '/Plug/Fcitx/Option.vim'); ?>
 <?php include_once(__DIR__ . '/Plug/Edit_BetterWhitespace/Option.vim'); ?>
+<?php include_once(__DIR__ . '/Base/Leader/Option.vim'); ?>
 <?php include_once(__DIR__ . '/Base/Mode/Option.vim'); ?>
 <?php include_once(__DIR__ . '/Base/Buffer/Option.vim'); ?>
 <?php include_once(__DIR__ . '/Base/Cache/Option.vim'); ?>
