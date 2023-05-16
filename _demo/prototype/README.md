@@ -10,12 +10,18 @@
 | [ivim](ivim) |
 
 
-### Plugin
+### Plugin / vim-plug
 
 | Prototype |
 | --- |
 | [svim](svim) |
 | [mvim](mvim) |
 | [hvim](hvim) |
-| [pvim](pvim) |
 | [cvim](cvim) |
+
+
+### Plugin / packadd
+
+| Prototype |
+| --- |
+| [pvim](pvim) |
