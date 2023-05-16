@@ -5,7 +5,7 @@
 ""
 
 " :help :registers
-nnoremap ,r :registers<CR>
+nnoremap <Leader>r :registers<CR>
 
 
 ""
