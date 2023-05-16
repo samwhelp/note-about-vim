@@ -17,8 +17,8 @@ tnoremap <silent><C-[> <C-\><C-n> " for vim-bash: set -o emacs. use <CTRL+[> or 
 tnoremap <silent><C-]> <C-l>w " for vim-bash: set -o emacs. jump next window.
 
 " ## open terminal in new vim window
-"nnoremap ,t :terminal<CR>
-nnoremap ,i :terminal<CR>
+"nnoremap <Leader>t :terminal<CR>
+nnoremap <Leader>i :terminal<CR>
 
 
 """ Tail: Terminal / Keybind

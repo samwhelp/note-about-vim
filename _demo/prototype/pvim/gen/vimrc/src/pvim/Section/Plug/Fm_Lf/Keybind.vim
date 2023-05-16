@@ -5,7 +5,7 @@
 ""
 
 nnoremap <Space>el :Lf<CR>
-nnoremap ,f :Lf<CR>
+nnoremap <Leader>f :Lf<CR>
 
 ""
 """ Tail: FmLf / Keybind

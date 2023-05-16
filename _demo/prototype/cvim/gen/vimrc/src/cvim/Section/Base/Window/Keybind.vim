@@ -11,20 +11,20 @@ nnoremap <BS> <C-w>W
 
 
 " ## current window only
-"nnoremap ,wa <C-w>o
-nnoremap ,wa :only<CR>
+"nnoremap <Leader>wa <C-w>o
+nnoremap <Leader>wa :only<CR>
 
 " ## close window
-nnoremap ,wc :close<CR>
+nnoremap <Leader>wc :close<CR>
 
 " ## new horizontal window
-nnoremap ,wn :new<CR>
+nnoremap <Leader>wn :new<CR>
 
 " ## new vertical window
-nnoremap ,wv :vnew<CR>
+nnoremap <Leader>wv :vnew<CR>
 
 " ## hide
-nnoremap ,h :hide<CR>
+nnoremap <Leader>h :hide<CR>
 
 
 " ## resize window

@@ -172,6 +172,41 @@ let g:better_whitespace_ctermcolor='132'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Leader / Option
+""
+
+" ## use "," for leader
+"let mapleader=","
+
+
+" ## use "space" for leader
+let mapleader="\<Space>"
+
+
+""
+""" Tail: Leader / Option
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Docs
+""
+
+" https://vimhelp.org/
+"
+" :help map.txt
+" https://vimhelp.org/map.txt.html
+"
+" :help leaer
+" https://vimhelp.org/map.txt.html#mapleader
+
+""
+""" Tail: Docs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Info / Option
 ""
 
@@ -689,7 +724,7 @@ set fillchars=vert:│,fold:·
 """ Head: Fm_NerdTree / Keybind
 ""
 
-nnoremap ,t :NERDTreeToggle<cr>
+nnoremap <Leader>t :NERDTreeToggle<cr>
 
 
 ""
@@ -702,7 +737,7 @@ nnoremap ,t :NERDTreeToggle<cr>
 ""
 
 nnoremap <Space>el :Lf<CR>
-nnoremap ,f :Lf<CR>
+nnoremap <Leader>f :Lf<CR>
 
 ""
 """ Tail: Fm_Lf / Keybind
@@ -714,7 +749,7 @@ nnoremap ,f :Lf<CR>
 ""
 
 nnoremap <Space>er :Ranger<CR>
-"nnoremap ,f :Ranger<CR>
+"nnoremap <Leader>f :Ranger<CR>
 
 ""
 """ Tail: Fm_Ranger / Keybind
@@ -805,8 +840,8 @@ inoremap <S-PageDown> <Esc>:m+<CR>i
 ""
 
 " ## switch buffer
-nnoremap ,` :bprevious<CR>
-nnoremap ,<Tab> :bnext<CR>
+nnoremap <Leader>` :bprevious<CR>
+nnoremap <Leader><Tab> :bnext<CR>
 nnoremap <C-Up> :bprevious<CR>
 nnoremap <C-Down> :bnext<CR>
 nnoremap <C-k> :bprevious<CR>
@@ -819,13 +854,13 @@ nnoremap <C-j> :bnext<CR>
 
 
 " ## list buffer
-nnoremap ,b :ls<CR>
-"nnoremap ,b :buffers<CR>
-"nnoremap ,b :files<CR>
+nnoremap <Leader>b :ls<CR>
+"nnoremap <Leader>b :buffers<CR>
+"nnoremap <Leader>b :files<CR>
 
 
 " ## save
-"nnoremap ,s :w<CR>
+"nnoremap <Leader>s :w<CR>
 nnoremap <S-Tab> :w<CR>
 inoremap <S-Tab> <Esc>:w<CR>a
 
@@ -846,10 +881,10 @@ nnoremap <Bslash>c :qa!<CR>
 
 
 " ## Delete Buffer
-nnoremap ,q :bdelete<CR>
-nnoremap ,z :bdelete!<CR>
-nnoremap ,x :%bdelete<CR>
-nnoremap ,c :%bdelete!<CR>
+nnoremap <Leader>q :bdelete<CR>
+nnoremap <Leader>z :bdelete!<CR>
+nnoremap <Leader>x :%bdelete<CR>
+nnoremap <Leader>c :%bdelete!<CR>
 
 ""
 """ Tail: Quit / Keybind
@@ -867,20 +902,20 @@ nnoremap <BS> <C-w>W
 
 
 " ## current window only
-"nnoremap ,wa <C-w>o
-nnoremap ,wa :only<CR>
+"nnoremap <Leader>wa <C-w>o
+nnoremap <Leader>wa :only<CR>
 
 " ## close window
-nnoremap ,wc :close<CR>
+nnoremap <Leader>wc :close<CR>
 
 " ## new horizontal window
-nnoremap ,wn :new<CR>
+nnoremap <Leader>wn :new<CR>
 
 " ## new vertical window
-nnoremap ,wv :vnew<CR>
+nnoremap <Leader>wv :vnew<CR>
 
 " ## hide
-nnoremap ,h :hide<CR>
+nnoremap <Leader>h :hide<CR>
 
 
 " ## resize window
@@ -929,7 +964,7 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
-nnoremap ,u :redraw<CR> "  for orignal <C-l>
+nnoremap <Leader>u :redraw<CR> "  for orignal <C-l>
 
 " ## switch to first or last
 nnoremap tj :tabfirst<CR>
@@ -984,7 +1019,7 @@ nnoremap ts :tab split<CR>
 
 
 " ## new tabpage or close
-"nnoremap ,t :tabnew<CR>
+"nnoremap <Leader>t :tabnew<CR>
 "nnoremap tt :tabnew<CR>
 nnoremap tg :tabnew<CR>
 nnoremap tc :tabclose<CR>
@@ -1023,10 +1058,10 @@ nnoremap tb :tab help<CR>
 """ Head: Explore / Keybind
 ""
 
-nnoremap ,e :Lexplore<CR>
-"nnoremap ,e :Explore<CR>
-"nnoremap ,g :Rexplore<CR>
-"nnoremap ,g :Explore<Space>
+nnoremap <Leader>e :Lexplore<CR>
+"nnoremap <Leader>e :Explore<CR>
+"nnoremap <Leader>g :Rexplore<CR>
+"nnoremap <Leader>g :Explore<Space>
 
 ""
 """ Tail: Explore / Keybind
@@ -1038,7 +1073,7 @@ nnoremap ,e :Lexplore<CR>
 ""
 
 " :help :registers
-nnoremap ,r :registers<CR>
+nnoremap <Leader>r :registers<CR>
 
 
 ""
@@ -1051,7 +1086,7 @@ nnoremap ,r :registers<CR>
 ""
 
 " ## :help :marks
-nnoremap ,m :marks<CR>
+nnoremap <Leader>m :marks<CR>
 
 ""
 """ Tail: Mark / Keybind
@@ -1063,10 +1098,10 @@ nnoremap ,m :marks<CR>
 ""
 
 " ## print current_work_dir_path
-nnoremap ,o :pwd<CR>
+nnoremap <Leader>o :pwd<CR>
 
 " ## change current_work_dir_path to current_file_dir_path
-nnoremap ,p :set autochdir<CR>:set autochdir!<CR>:pwd<CR>
+nnoremap <Leader>p :set autochdir<CR>:set autochdir!<CR>:pwd<CR>
 
 ""
 """ Tail: Project / Keybind
@@ -1090,8 +1125,8 @@ tnoremap <silent><C-[> <C-\><C-n> " for vim-bash: set -o emacs. use <CTRL+[> or 
 tnoremap <silent><C-]> <C-l>w " for vim-bash: set -o emacs. jump next window.
 
 " ## open terminal in new vim window
-"nnoremap ,t :terminal<CR>
-nnoremap ,i :terminal<CR>
+"nnoremap <Leader>t :terminal<CR>
+nnoremap <Leader>i :terminal<CR>
 
 
 """ Tail: Terminal / Keybind
@@ -1118,8 +1153,8 @@ nnoremap <Bslash>a :set list!<CR>
 " ## switch line number shortcut key
 nnoremap <Bslash>l :set number!<CR>
 nnoremap <Bslash>n :set relativenumber!<CR>
-nnoremap ,n :set nonumber<CR>:set norelativenumber<CR>
-nnoremap ,l :set number<CR>:set relativenumber<CR>
+nnoremap <Leader>n :set nonumber<CR>:set norelativenumber<CR>
+nnoremap <Leader>l :set number<CR>:set relativenumber<CR>
 
 
 ""

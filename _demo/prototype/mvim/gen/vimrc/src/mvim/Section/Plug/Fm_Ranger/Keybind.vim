@@ -5,7 +5,7 @@
 ""
 
 nnoremap <Space>er :Ranger<CR>
-"nnoremap ,f :Ranger<CR>
+"nnoremap <Leader>f :Ranger<CR>
 
 ""
 """ Tail: Fm_Ranger / Keybind

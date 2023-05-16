@@ -5,7 +5,7 @@
 ""
 
 " ## :help :marks
-nnoremap ,m :marks<CR>
+nnoremap <Leader>m :marks<CR>
 
 ""
 """ Tail: Mark / Keybind

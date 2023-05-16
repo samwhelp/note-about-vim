@@ -5,8 +5,8 @@
 ""
 
 " ## switch buffer
-nnoremap ,` :bprevious<CR>
-nnoremap ,<Tab> :bnext<CR>
+nnoremap <Leader>` :bprevious<CR>
+nnoremap <Leader><Tab> :bnext<CR>
 nnoremap <C-Up> :bprevious<CR>
 nnoremap <C-Down> :bnext<CR>
 nnoremap <C-k> :bprevious<CR>
@@ -19,13 +19,13 @@ nnoremap <C-j> :bnext<CR>
 
 
 " ## list buffer
-nnoremap ,b :ls<CR>
-"nnoremap ,b :buffers<CR>
-"nnoremap ,b :files<CR>
+nnoremap <Leader>b :ls<CR>
+"nnoremap <Leader>b :buffers<CR>
+"nnoremap <Leader>b :files<CR>
 
 
 " ## save
-"nnoremap ,s :w<CR>
+"nnoremap <Leader>s :w<CR>
 nnoremap <S-Tab> :w<CR>
 inoremap <S-Tab> <Esc>:w<CR>a
 
@@ -46,10 +46,10 @@ nnoremap <Bslash>c :qa!<CR>
 
 
 " ## Delete Buffer
-nnoremap ,q :bdelete<CR>
-nnoremap ,z :bdelete!<CR>
-nnoremap ,x :%bdelete<CR>
-nnoremap ,c :%bdelete!<CR>
+nnoremap <Leader>q :bdelete<CR>
+nnoremap <Leader>z :bdelete!<CR>
+nnoremap <Leader>x :%bdelete<CR>
+nnoremap <Leader>c :%bdelete!<CR>
 
 ""
 """ Tail: Quit / Keybind

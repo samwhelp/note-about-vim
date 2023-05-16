@@ -4,10 +4,10 @@
 """ Head: Explore / Keybind
 ""
 
-nnoremap ,e :Lexplore<CR>
-"nnoremap ,e :Explore<CR>
-"nnoremap ,g :Rexplore<CR>
-"nnoremap ,g :Explore<Space>
+nnoremap <Leader>e :Lexplore<CR>
+"nnoremap <Leader>e :Explore<CR>
+"nnoremap <Leader>g :Rexplore<CR>
+"nnoremap <Leader>g :Explore<Space>
 
 ""
 """ Tail: Explore / Keybind

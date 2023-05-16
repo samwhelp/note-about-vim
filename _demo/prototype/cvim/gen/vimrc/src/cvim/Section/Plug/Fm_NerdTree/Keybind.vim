@@ -4,7 +4,7 @@
 """ Head: Fm_NerdTree / Keybind
 ""
 
-nnoremap ,t :NERDTreeToggle<cr>
+nnoremap <Leader>t :NERDTreeToggle<cr>
 
 
 ""

@@ -33,7 +33,7 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
-nnoremap ,u :redraw<CR> "  for orignal <C-l>
+nnoremap <Leader>u :redraw<CR> "  for orignal <C-l>
 
 " ## switch to first or last
 nnoremap tj :tabfirst<CR>
@@ -88,7 +88,7 @@ nnoremap ts :tab split<CR>
 
 
 " ## new tabpage or close
-"nnoremap ,t :tabnew<CR>
+"nnoremap <Leader>t :tabnew<CR>
 "nnoremap tt :tabnew<CR>
 nnoremap tg :tabnew<CR>
 nnoremap tc :tabclose<CR>
