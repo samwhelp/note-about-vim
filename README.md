@@ -1,12 +1,13 @@
 
+
 # 首頁
 
-* [note-about-vim](https://samwhelp.github.io/note-about-vim/) ([GitHub](https://github.com/samwhelp/note-about-vim))
+| Link | GitHub |
+| ---- | ------ |
+| [Vim 探索筆記](https://samwhelp.github.io/note-about-vim/) | [GitHub](https://github.com/samwhelp/note-about-vim) |
+| [Nvim 探索筆記](https://samwhelp.github.io/note-about-nvim/) | [GitHub](https://github.com/samwhelp/note-about-nvim) |
 
 
-## 相關筆記
-
-* [nvim 探索筆記](https://samwhelp.github.io/note-about-nvim/) ([GitHub](https://github.com/samwhelp/note-about-nvim))
 
 
 ## 相關討論
@@ -14,19 +15,18 @@
 * [關於「vim」便利操作的按鍵設定](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=361366#forumpost361366)
 
 
-## samwhelp
-
-* [個人筆記](https://samwhelp.github.io/book/)
 
 
 ## 主題
-
 
 * [外觀微調](#外觀微調)
 * [按鍵綁定](#按鍵綁定)
 * [擴充套件](#擴充套件)
 * [專案](#專案)
 * [輔助工具](#輔助工具)
+* [相關筆記](#相關筆記)
+
+
 
 
 ### 外觀微調
@@ -38,6 +38,8 @@
 | [行數](https://samwhelp.github.io/note-about-vim/read/adjustment/view/line-number/) |
 
 
+
+
 ### 按鍵綁定
 
 | 議題 |
@@ -47,12 +49,16 @@
 | [編輯](https://samwhelp.github.io/note-about-vim/read/adjustment/keybind/edit/) |
 
 
+
+
 ### 擴充套件
 
 | 議題 |
 | --- |
 | [vim-plug](https://samwhelp.github.io/note-about-vim/read/adjustment/plugin/vim-plug/) |
 | [package](https://samwhelp.github.io/note-about-vim/read/adjustment/plugin/package/) |
+
+
 
 
 ### 專案
@@ -74,8 +80,19 @@
 | [cvim](https://samwhelp.github.io/note-about-vim/read/project/cvim.html) |  |
 
 
+
+
 ## 輔助工具
 
 | 工具 | 功能 |
 | --- | --- |
 | [xfteditor](https://samwhelp.github.io/tool-xfteditor/read/project/xfteditor/) | 輔助「檔案管理器」，右鍵開啟檔案到「xfce-terminal」的「新頁籤(Tab)」 |
+
+
+
+
+## 相關筆記
+
+## Samwhelp
+
+* [個人筆記](https://samwhelp.github.io/book/)
